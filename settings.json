@@ -28,6 +28,7 @@
     "editor.minimap.enabled": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "cmake.configureOnOpen": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "git.ignoreRebaseWarning": true
     
 }
