@@ -12,7 +12,18 @@
 	"terminal.integrated.fontFamily": "Menlo for Powerline",
 	"terminal.integrated.lineHeight": 1.3,
 	"workbench.colorCustomizations": {
-		"terminal.background": "#373737"
+		"terminal.background": "#2d2e2f",
+		"editor.selectionHighlightBackground": "#0000", // similar selection
+		"editor.selectionHighlightBorder": "#0000",
+  
+		"editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
+		"editor.wordHighlightStrongBorder": "#0000",
+  
+		"editor.wordHighlightBackground": "#0000", // syntax variable
+		"editor.wordHighlightBorder": "#0000",
+  
+		"editorBracketMatch.border": "#0000",// brackets
+		"editorBracketMatch.background": "#0000",
 	},
 	"settingsSync.ignoredSettings": [
 		"-window.zoomLevel",
@@ -21,11 +32,16 @@
 	"git.confirmSync": false,
 	"editor.minimap.enabled": false,
 	"editor.unicodeHighlight.invisibleCharacters": false,
-	"cmake.configureOnOpen": true,
 	"git.ignoreRebaseWarning": true,
-	"window.zoomLevel": 1,
 	"vetur.format.options.useTabs": true,
-	"editor.formatOnSave": true,
-	"editor.tabSize": 2,
-	"editor.tabCompletion": "on"
+	"editor.tabCompletion": "on",
+	"printcode.tabSize": 4,
+	"bracket-pair-colorizer-2.depreciation-notice": false,
+	"workbench.editorAssociations": {},
+	"liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.accessibilitySupport": "off",
+	"workbench.startupEditor": "none",
+	"window.zoomLevel": 1,
 }
