@@ -43,5 +43,36 @@
 	"C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
 	"remote.SSH.remotePlatform": {
 		"Personal-EC2": "linux"
-	}
+	},
+	"activitusbar.views": [
+		{
+			"name": "explorer",
+			"codicon": "explorer-view-icon"
+		},
+		{
+			"name": "search",
+			"codicon": "search-view-icon"
+		},
+		{
+			"name": "scm",
+			"codicon": "source-control-view-icon"
+		},
+		{
+			"name": "debug",
+			"codicon": "run-view-icon"
+		},
+		{
+			"name": "extensions",
+			"codicon": "extensions-view-icon"
+		},
+		{
+			"name": "command.workbench.view.remote",
+			"codicon": "remote-explorer-view-icon",
+		},
+		{
+			"name": "command.workbench.action.reloadWindow",
+			"codicon": "refresh"
+		}
+	],
+	"workbench.activityBar.visible": false
 }
