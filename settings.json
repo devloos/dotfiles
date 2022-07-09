@@ -1,37 +1,47 @@
 {
+	// Basic Settings
+	// Terminal
+	"terminal.integrated.defaultProfile.osx": "fish",
+	"terminal.integrated.fontFamily": "Fira Code",
+	"terminal.integrated.lineHeight": 1.3,
+	// Explorer
 	"explorer.confirmDragAndDrop": false,
 	"explorer.confirmDelete": false,
-	"debug.onTaskErrors": "debugAnyway",
-	"security.workspace.trust.untrustedFiles": "open",
-	"terminal.integrated.defaultProfile.osx": "zsh",
-	"terminal.external.osxExec": "iTerm.app",
-	"terminal.integrated.fontFamily": "Menlo for Powerline",
-	"terminal.integrated.lineHeight": 1.3,
+	// Editor
+	"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
 	"editor.minimap.enabled": false,
 	"editor.tabCompletion": "on",
-	"workbench.editorAssociations": {},
-	"workbench.iconTheme": "material-icon-theme",
 	"editor.tabSize": 2,
-	"workbench.colorCustomizations": {
-		"terminal.background": "#2d2e2f",
-		"editor.selectionHighlightBackground": "#0000", // similar selection
-		"editor.selectionHighlightBorder": "#0000",
-
-		"editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
-		"editor.wordHighlightStrongBorder": "#0000",
-
-		"editor.wordHighlightBackground": "#0000", // syntax variable
-		"editor.wordHighlightBorder": "#0000",
-
-		"editorBracketMatch.border": "#0000",// brackets
-		"editorBracketMatch.background": "#0000",
-	},
-	"C_Cpp.default.includePath": [
-		"/Library/Frameworks/SDL2.framework/Headers/"
-	],
 	"editor.guides.indentation": true,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.guides.bracketPairs": "active",
+	"window.zoomLevel": 0.75,
+	"security.workspace.trust.untrustedFiles": "open",
+	// C_CPP
+	"C_Cpp.default.cppStandard": "c++20",
+	"C_Cpp.default.cStandard": "c17",
+	"C_Cpp.default.compilerPath": "/usr/bin/clang",
+	"C_Cpp.default.intelliSenseMode": "macos-clang-x64",
+	// Workbench
+	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
-	"window.zoomLevel": 0.7
+	"workbench.colorCustomizations": {
+		// Selection Highlighting Disabled
+		"editor.selectionHighlightBackground": "#0000", // similar selection
+		"editor.selectionHighlightBorder": "#0000",
+		"editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
+		"editor.wordHighlightStrongBorder": "#0000",
+		"editor.wordHighlightBackground": "#0000", // syntax variable
+		"editor.wordHighlightBorder": "#0000",
+		"editorBracketMatch.border": "#0000", // brackets
+		"editorBracketMatch.background": "#0000",
+		// My Customizations
+		"editor.background": "#202020",
+		"terminal.background": "#2d2e2f",
+	},
+	"editor.formatOnSave": true,
+	"C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+	"remote.SSH.remotePlatform": {
+		"Personal-EC2": "linux"
+	}
 }
