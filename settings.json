@@ -17,14 +17,10 @@
 	"editor.guides.bracketPairs": "active",
 	"window.zoomLevel": 0.75,
 	"security.workspace.trust.untrustedFiles": "open",
-	// C_CPP
-	"C_Cpp.default.cppStandard": "c++20",
-	"C_Cpp.default.cStandard": "c17",
-	"C_Cpp.default.compilerPath": "/usr/bin/clang",
-	"C_Cpp.default.intelliSenseMode": "macos-clang-x64",
 	// Workbench
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
+	"workbench.activityBar.visible": false,
 	"workbench.colorCustomizations": {
 		// Selection Highlighting Disabled
 		"editor.selectionHighlightBackground": "#0000", // similar selection
@@ -39,11 +35,11 @@
 		"editor.background": "#202020",
 		"terminal.background": "#2d2e2f",
 	},
-	"editor.formatOnSave": true,
-	"C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+	// Remote Setting for Personal EC2
 	"remote.SSH.remotePlatform": {
 		"Personal-EC2": "linux"
 	},
+	// Activity Bar
 	"activitusbar.views": [
 		{
 			"name": "explorer",
@@ -74,5 +70,4 @@
 			"codicon": "refresh"
 		}
 	],
-	"workbench.activityBar.visible": false
 }
