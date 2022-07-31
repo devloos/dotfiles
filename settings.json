@@ -1,73 +1,47 @@
 {
-	// Basic Settings
-	// Terminal
-	"terminal.integrated.defaultProfile.osx": "fish",
-	"terminal.integrated.fontFamily": "Fira Code",
-	"terminal.integrated.lineHeight": 1.3,
-	// Explorer
-	"explorer.confirmDragAndDrop": false,
-	"explorer.confirmDelete": false,
-	// Editor
-	"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-	"editor.minimap.enabled": false,
-	"editor.tabCompletion": "on",
-	"editor.tabSize": 2,
-	"editor.guides.indentation": true,
-	"editor.bracketPairColorization.enabled": true,
-	"editor.guides.bracketPairs": "active",
-	"window.zoomLevel": 0.75,
-	"security.workspace.trust.untrustedFiles": "open",
-	// Workbench
-	"workbench.iconTheme": "material-icon-theme",
-	"workbench.startupEditor": "none",
-	"workbench.activityBar.visible": false,
-	"workbench.colorCustomizations": {
-		// Selection Highlighting Disabled
-		"editor.selectionHighlightBackground": "#0000", // similar selection
-		"editor.selectionHighlightBorder": "#0000",
-		"editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
-		"editor.wordHighlightStrongBorder": "#0000",
-		"editor.wordHighlightBackground": "#0000", // syntax variable
-		"editor.wordHighlightBorder": "#0000",
-		"editorBracketMatch.border": "#0000", // brackets
-		"editorBracketMatch.background": "#0000",
-		// My Customizations
-		"editor.background": "#202020",
-		"terminal.background": "#2d2e2f",
-	},
-	// Remote Setting for Personal EC2
-	"remote.SSH.remotePlatform": {
-		"Personal-EC2": "linux"
-	},
-	// Activity Bar
-	"activitusbar.views": [
-		{
-			"name": "explorer",
-			"codicon": "explorer-view-icon"
-		},
-		{
-			"name": "search",
-			"codicon": "search-view-icon"
-		},
-		{
-			"name": "scm",
-			"codicon": "source-control-view-icon"
-		},
-		{
-			"name": "debug",
-			"codicon": "run-view-icon"
-		},
-		{
-			"name": "extensions",
-			"codicon": "extensions-view-icon"
-		},
-		{
-			"name": "command.workbench.view.remote",
-			"codicon": "remote-explorer-view-icon",
-		},
-		{
-			"name": "command.workbench.action.reloadWindow",
-			"codicon": "refresh"
-		}
-	],
+  // Basic Settings
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // Editor
+  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.minimap.enabled": false,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.guides.indentation": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "window.zoomLevel": 0.75,
+  "security.workspace.trust.untrustedFiles": "open",
+  // Workbench
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.activityBar.visible": false,
+  "workbench.colorCustomizations": {
+    // Selection Highlighting Disabled
+    "editor.selectionHighlightBackground": "#0000", // similar selection
+    "editor.selectionHighlightBorder": "#0000",
+    "editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
+    "editor.wordHighlightStrongBorder": "#0000",
+    "editor.wordHighlightBackground": "#0000", // syntax variable
+    "editor.wordHighlightBorder": "#0000",
+    "editorBracketMatch.border": "#0000", // brackets
+    "editorBracketMatch.background": "#0000",
+    // My Customizations
+    "editor.background": "#202020",
+    "terminal.background": "#2d2e2f"
+  },
+  // Activity Bar
+  "activitusbar.views": [
+    { "name": "explorer", "codicon": "explorer-view-icon" },
+    { "name": "search", "codicon": "search-view-icon" },
+    { "name": "scm", "codicon": "source-control-view-icon" },
+    { "name": "debug", "codicon": "run-view-icon" },
+    { "name": "extensions", "codicon": "extensions-view-icon" },
+    {
+      "name": "command.workbench.view.remote",
+      "codicon": "remote-explorer-view-icon"
+    },
+    { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
+  ]
 }
