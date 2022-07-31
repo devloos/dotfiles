@@ -38,10 +38,7 @@
     { "name": "scm", "codicon": "source-control-view-icon" },
     { "name": "debug", "codicon": "run-view-icon" },
     { "name": "extensions", "codicon": "extensions-view-icon" },
-    {
-      "name": "command.workbench.view.remote",
-      "codicon": "remote-explorer-view-icon"
-    },
+    { "name": "command.workbench.view.remote", "codicon": "remote-explorer-view-icon" },
     { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
   ]
 }
