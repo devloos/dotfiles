@@ -19,6 +19,5 @@ target_include_directories(${PROJECT_NAME} PUBLIC /include)
 echo '#include <iostream>
 
 int main() {
-  std::cout << "Hello World!";
   return 0;
 }' > src/main.cpp
