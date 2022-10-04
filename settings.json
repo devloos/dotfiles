@@ -1,4 +1,5 @@
 {
+  // "editor.stickyScroll.enabled": true, 
   // Basic Settings
   // Explorer
   "explorer.confirmDragAndDrop": false,
@@ -11,8 +12,10 @@
   "editor.guides.indentation": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "window.zoomLevel": 0.75,
+  "editor.lineNumbers":"relative",
   "security.workspace.trust.untrustedFiles": "open",
+  "extensions.ignoreRecommendations": true,
+  "window.zoomLevel": 0.75,
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -40,5 +43,5 @@
     { "name": "extensions", "codicon": "extensions-view-icon" },
     { "name": "command.workbench.view.remote", "codicon": "remote-explorer-view-icon" },
     { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
-  ]
+  ],
 }
