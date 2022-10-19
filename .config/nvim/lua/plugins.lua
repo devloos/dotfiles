@@ -43,4 +43,9 @@ return require('packer').startup(function(use)
   -- Theme
   use 'Mofiqul/vscode.nvim'
 
+  -- CMD Comments
+  use "terrortylor/nvim-comment"
+
+  use "lukas-reineke/indent-blankline.nvim"
+
 end)

@@ -9,7 +9,7 @@ vim.opt.relativenumber = true
 vim.opt.rnu = true
 vim.opt.cc = "90"
 vim.opt.mouse = "a"
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamed"
 vim.opt.smartindent = true
 
 -- Theme
@@ -33,4 +33,9 @@ require('nvim-treesitter.configs').setup {
   rainbow = {
     enable = true,
   }
+}
+
+-- CMD Comments
+require('nvim_comment').setup{
+  line_mapping = "//",
 }
