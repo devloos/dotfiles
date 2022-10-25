@@ -30,9 +30,7 @@ echo '{
 echo '{
 	"C_Cpp.default.cppStandard": "c++20",
 	"C_Cpp.default.cStandard": "c17",
-	"C_Cpp.default.compilerPath": "/usr/bin/clang",
-	"C_Cpp.default.intelliSenseMode": "macos-clang-x64",
-
+	"C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
 	"C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
 	"[cpp]": {
 		"editor.formatOnSave": true

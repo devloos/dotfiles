@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+
+filename='urls.txt'
+
+while read line; 
+do
+
+youtube-dl --no-playlist -x --audio-format mp3 $line 
+
+done < $filename
