@@ -32,7 +32,7 @@
 
 > Not including dependencies
 
-| Install     | This                   | List              |
+| List        |                        |                   |
 | ----------- | ---------------------- | ----------------- |
 | lua         | neovim                 | node@16           |
 | wget        | ripgrep                | luarocks          |
