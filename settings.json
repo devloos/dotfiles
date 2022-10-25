@@ -1,9 +1,8 @@
 {
-  // "editor.stickyScroll.enabled": true, 
-  // Basic Settings
   // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+
   // Editor
   "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
   "editor.minimap.enabled": false,
@@ -12,10 +11,18 @@
   "editor.guides.indentation": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "editor.lineNumbers":"relative",
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+
+  // Terminal
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+
+  // Misc.
   "security.workspace.trust.untrustedFiles": "open",
   "extensions.ignoreRecommendations": true,
-  "window.zoomLevel": 0.75,
+  "window.zoomLevel": 0.5,
+
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -28,12 +35,12 @@
     "editor.wordHighlightStrongBorder": "#0000",
     "editor.wordHighlightBackground": "#0000", // syntax variable
     "editor.wordHighlightBorder": "#0000",
-    "editorBracketMatch.border": "#0000", // brackets
     "editorBracketMatch.background": "#0000",
     // My Customizations
     "editor.background": "#202020",
     "terminal.background": "#2d2e2f"
   },
+
   // Activity Bar
   "activitusbar.views": [
     { "name": "explorer", "codicon": "explorer-view-icon" },
@@ -44,4 +51,24 @@
     { "name": "command.workbench.view.remote", "codicon": "remote-explorer-view-icon" },
     { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
   ],
+
+  // C++ Settings
+  "C_Cpp.default.cppStandard": "c++20",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+  "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+  "[cpp]": {
+    "editor.defaultFormatter": null
+  },
+
+  // Frontend settings
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 90,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // PHP Settings
+  "[php]": {
+    "editor.defaultFormatter": null
+  }
 }
