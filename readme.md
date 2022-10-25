@@ -32,26 +32,15 @@
 
 > Not including dependencies
 
-- lua
-- neovim
-- node@16
-- wget
-- ripgrep
-- luarocks
-- libtool
-- automake
-- mongodb-community
-- symfony-cli
-- mongodb-database-tools
-- mongosh
-- php
-- heroku
-- tree-sitter
-- cppcheck
-- curl
-- llvm
-- mysql
-- python@3.10
+| Install     |
+| ----------- | ---------------------- | ----------------- |
+| lua         | neovim                 | node@16           |
+| wget        | ripgrep                | luarocks          |
+| libtool     | automake               | mongodb-community |
+| symfony-cli | mongodb-database-tools | mongosh           |
+| php         | heroku                 | tree-sitter       |
+| cppcheck    | curl                   | llvm              |
+| mysql       | python@3.10            |
 
 ### PIP List
 
