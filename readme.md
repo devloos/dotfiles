@@ -69,14 +69,20 @@ killall Dock
 
 **Press and Hold vscode vim Navigation**
 
-`defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true`
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+```
 
 ### Optionals
 
 **Disable non-case Sqensitive File Names**
 
-`git config --local core.ignorecase false`
+```
+git config --local core.ignorecase false
+```
 
 **Homebrew Disable Update on Install**
 
-`HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>`
+```
+HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>
+```
