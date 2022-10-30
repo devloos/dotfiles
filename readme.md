@@ -73,10 +73,10 @@ killall Dock
 
 ### Optionals
 
-**Disable non-case sensitive file names**
+**Disable non-case Sqensitive File Names**
 
 `git config --local core.ignorecase false`
 
-**Homebrew disable update on install**
+**Homebrew Disable Update on Install**
 
 `HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>`
