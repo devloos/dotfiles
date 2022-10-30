@@ -57,3 +57,26 @@
 - [VSCode Harpoon](https://marketplace.visualstudio.com/items?itemName=tobias-z.vscode-harpoon)
 
 **[Extensions Config](https://github.com/Puwya/System-Config/blob/master/settings.json)**
+
+### Mac System Config
+
+**Disable Auto Desktop Switching**
+
+```
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+killall Dock
+```
+
+**Press and Hold vscode vim Navigation**
+
+`defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true`
+
+### Optionals
+
+**Disable non-case sensitive file names**
+
+`git config --local core.ignorecase false`
+
+**Homebrew disable update on install**
+
+`HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>`
