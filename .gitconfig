@@ -1,3 +1,13 @@
 [user]
-    name = Carlos Aguilera
-    email = 18aguilerac@gmail.com
+  name = Carlos Aguilera
+  email = 18aguilerac@gmail.com
+
+[alias]
+  cm = commit -m
+  cam = commit -am
+  psuh = push
+  st = status
+  unstage = restore --staged
+
+[push]
+  default = current
