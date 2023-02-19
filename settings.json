@@ -21,7 +21,6 @@
   // Misc.
   "security.workspace.trust.untrustedFiles": "open",
   "extensions.ignoreRecommendations": true,
-  "window.zoomLevel": 0.5,
 
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
@@ -40,6 +39,7 @@
     "editor.background": "#202020",
     "terminal.background": "#2d2e2f"
   },
+  "window.zoomLevel": 0.5,
 
   // Activity Bar
   "activitusbar.views": [
@@ -70,5 +70,9 @@
   // PHP Settings
   "[php]": {
     "editor.defaultFormatter": null
+  },
+
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
   }
 }
