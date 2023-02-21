@@ -92,6 +92,7 @@ HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>
 **BREW**
 
 > List brew formulas without dependencies `brew leaves`
+
 > Outdated Formulas `brew outdated`
 
 **CPP**
