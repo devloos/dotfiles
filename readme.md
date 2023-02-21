@@ -86,3 +86,13 @@ git config --local core.ignorecase false
 ```
 HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>
 ```
+
+### Useful Commands
+
+**BREW**
+
+> List brew formulas without dependencies
+`brew leaves`
+
+> Outdated Formulas
+`brew outdated`
