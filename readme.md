@@ -58,34 +58,35 @@
 
 **[Extensions Config](https://github.com/Puwya/System-Config/blob/master/settings.json)**
 
-### Mac System Config
+### System
 
-**Disable Auto Desktop Switching**
+#### Terminal
 
-```
-defaults write com.apple.dock workspaces-auto-swoosh -bool NO
-killall Dock
-```
+> disables adding period when double spacing
 
-**Press and Hold vscode vim Navigation**
+`defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false`
 
-```
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
-```
+> turns siri off
 
-### Optionals
+`defaults write com.apple.Siri StatusMenuVisible -bool false`
 
-**Disable non-case Sqensitive File Names**
+> these 3 commands set dock orientation left, enable scale effect, and turn on auto hide
 
-```
-git config --local core.ignorecase false
-```
+`defaults write com.apple.dock orientation -string left`
+`defaults write com.apple.dock mineffect -string scale`
+`defaults write com.apple.dock autohide -bool true`
 
-**Homebrew Disable Update on Install**
+> removes recent applications from the dock
 
-```
-HOMEBREW_NO_AUTO_UPDATE=1 brew install <formula>
-```
+`defaults write com.apple.dock show-recents -bool false`
+
+> adds background sounds to control center (note you still need to choose the sounds)
+
+`defaults write com.apple.controlcenter "NSStatusItem Visible Hearing" -bool true`
+
+> binds the escape to cap locks, so pressing cap locks result in esc being pressed
+
+`hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'`
 
 ### Useful Commands
 
