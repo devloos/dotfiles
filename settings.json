@@ -24,8 +24,9 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.activityBar.visible": false,
+
+  // Selection Highlighting Disabled
   "workbench.colorCustomizations": {
-    // Selection Highlighting Disabled
     "editor.selectionHighlightBackground": "#0000", // similar selection
     "editor.selectionHighlightBorder": "#0000",
     "editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
