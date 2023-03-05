@@ -3,11 +3,15 @@
   email = 18aguilerac@gmail.com
 
 [alias]
-  cm = commit -m
   cam = commit -am
+  cm = commit -m
+  co = checkout
   psuh = push
   st = status
   unstage = restore --staged
 
 [push]
+  default = current
+
+[pull]
   default = current
