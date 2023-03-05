@@ -34,7 +34,7 @@ alias lc="cd ~/Development/Leetcode"
 alias tic="cd ~/Development/Projects/Java-Tic-Tac-Toe"
 
 # Shortcuts
-function gxconfig() {
+function gxconf() {
   cp ~/.zshrc ~/Development/System-Config/
   cp ~/Library/Application\ Support/Code/User/settings.json ~/Development/System-Config/
   cp ~/.gitconfig ~/Development/System-Config/
