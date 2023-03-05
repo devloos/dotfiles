@@ -43,10 +43,10 @@ function gxconf() {
 
   local p=$(pwd)
 
-  echo $p
-
   cd ~/Development/System-Config/
   gx . "update"
+
+  cd $p
 }
 
 # powerlevel10k
