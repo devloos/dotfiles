@@ -70,6 +70,5 @@
   {
     "key": "ctrl+i",
     "command": "vscode-harpoon.editorQuickPick"
-  },
-  {}
+  }
 ]
