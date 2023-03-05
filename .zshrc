@@ -43,7 +43,7 @@ function gxconf() {
 
   local p=pwd
 
-  echo p
+  echo $p
 
   cd ~/Development/System-Config/
   gx . "update"
