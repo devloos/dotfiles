@@ -41,7 +41,7 @@ function gxconf() {
   cp ~/Library/Application\ Support/Code/User/keybindings.json ~/Development/System-Config/
   cp -r ~/.config/nvim ~/Development/System-Config/.config/
 
-  local p=pwd
+  local p=$(pwd)
 
   echo $p
 
