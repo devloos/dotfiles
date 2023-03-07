@@ -28,8 +28,9 @@ function gx() {
 }
 
 # Folder Movement
-alias epm="cd ~/Development/CC/Empty-Main"
-alias epmj="cd ~/Development/Java/Empty-Main"
+alias ec="cd ~/Development/CC/Empty-Main"
+alias ej="cd ~/Development/Java/Empty-Main"
+alias er="cd ~/Development/Rust/empty_main/"
 alias lc="cd ~/Development/Leetcode"
 alias tic="cd ~/Development/Projects/Java-Tic-Tac-Toe"
 
