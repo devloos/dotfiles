@@ -64,53 +64,23 @@ typescript.setup({
 	},
 })
 
--- configure html server
-lspconfig["html"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+local servers = {
+	[1] = "html",
+	[2] = "cssls",
+	[3] = "tailwindcss",
+	[4] = "clangd",
+	[5] = "jdtls",
+	[6] = "volar",
+	[7] = "texlab",
+	[8] = "rust_analyzer",
+}
 
--- configure css server
-lspconfig["cssls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure tailwindcss server
-lspconfig["tailwindcss"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure clangd language server
-lspconfig["clangd"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure jdtls language server
-lspconfig["jdtls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure vuels language server
-lspconfig["volar"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure texlab language server
-lspconfig["texlab"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
-
--- configure texlab language server
-lspconfig["rust_analyzer"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+for _, server in ipairs(servers) do
+	lspconfig[server].setup({
+		capabilities = capabilities,
+		on_attach = on_attach,
+	})
+end
 
 -- configure lua server (with special settings)
 lspconfig["lua_ls"].setup({
