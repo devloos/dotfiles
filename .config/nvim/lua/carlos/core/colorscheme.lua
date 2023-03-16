@@ -1,22 +1,27 @@
+-- For dark theme (neovim's default)
 vim.o.background = "dark"
 
- require("monokai-pro").setup({
-     -- ... your config
-     transparent_background = false,
-     terminal_colors = true,
-     -- devicons = true, -- highlight the icons of `nvim-web-devicons`
-     styles = {
-         comment = { italic = true },
-         keyword = { italic = true }, -- any other keyword
-         type = { italic = true }, -- (preferred) int, long, char, etc
-         storageclass = { italic = true }, -- static, register, volatile, etc
-         structure = { italic = true }, -- struct, union, enum, etc
-         parameter = { italic = true }, -- parameter pass in function
-         annotation = { italic = true },
-         tag_attribute = { italic = true }, -- attribute of tag in reactjs
-     },
-     filter = "octagon", -- classic | octagon | pro | machine | ristretto | spectrum
-     -- Enable this will disable filter optio
- })
- -- lua
- vim.cmd([[colorscheme monokai-pro]])
+local c = require("vscode.colors").get_colors()
+require("vscode").setup({
+	-- Enable transparent background
+	transparent = false,
+
+	-- Enable italic comment
+	italic_comments = true,
+
+	-- Disable nvim-tree background color
+	disable_nvimtree_bg = true,
+
+	-- Override colors (see ./lua/vscode/colors.lua)
+	color_overrides = {
+		vscLineNumber = "#FFFFFF",
+	},
+
+	-- Override highlight groups (see ./lua/vscode/theme.lua)
+	group_overrides = {
+		-- this supports the same val table as vim.api.nvim_set_hl
+		-- use colors from this colorscheme by requiring vscode.colors!
+		Cursor = { fg = c.vscDarkBlue, bg = c.vscLightGreen, bold = true },
+	},
+})
+require("vscode").load()
