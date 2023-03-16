@@ -39,6 +39,12 @@ alias er="cd ~/Development/Rust/empty_main/"
 alias lc="cd ~/Development/Leetcode"
 alias tic="cd ~/Development/Projects/Java-Tic-Tac-Toe"
 
+alias admin-api="cd /var/www/ethika-admin-api/"
+alias admin-vue="cd /var/www/ethika-admin-vue-cli/"
+alias site-api="cd /var/www/ethika-site-api/"
+alias site-vue="cd /var/www/ethika-site-vue-cli/"
+alias common="cd /var/www/ethika-common/"
+
 # Shortcuts
 function gxconf() {
   cp ~/.zshrc ~/Development/System-Config/
