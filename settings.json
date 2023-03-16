@@ -15,6 +15,7 @@
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "off",
   "window.zoomLevel": 0.5,
+  "git.openRepositoryInParentFolders": "always",
 
   // Misc.
   "security.workspace.trust.untrustedFiles": "open",
@@ -75,5 +76,33 @@
 
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  }
+  },
+
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<S-g>"],
+      "after": ["<S-g>", "z", "z"]
+    },
+    {
+      "before": ["{"],
+      "after": ["{", "z", "z"]
+    },
+    {
+      "before": ["}"],
+      "after": ["}", "z", "z"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    }
+  ]
 }

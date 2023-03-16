@@ -149,6 +149,12 @@ _G.packer_plugins = {
     path = "/Users/ca/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["monokai-pro.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16monokai-pro\frequire\0" },
+    loaded = true,
+    path = "/Users/ca/.local/share/nvim/site/pack/packer/start/monokai-pro.nvim",
+    url = "https://github.com/loctvl842/monokai-pro.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/ca/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -235,15 +241,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ca/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
-  },
-  ["vscode.nvim"] = {
-    loaded = true,
-    path = "/Users/ca/.local/share/nvim/site/pack/packer/start/vscode.nvim",
-    url = "https://github.com/Mofiqul/vscode.nvim"
   }
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: monokai-pro.nvim
+time([[Config for monokai-pro.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\16monokai-pro\frequire\0", "config", "monokai-pro.nvim")
+time([[Config for monokai-pro.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-treesitter ]]

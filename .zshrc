@@ -5,7 +5,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Hom
 alias srczsh="source ~/.zshrc"
 
 # Config
-alias nvimrc="nvim ~/.config/nvim/init.lua"
 alias fishrc="nvim ~/.config/fish/config.fish"
 alias zshrc="nvim ~/.zshrc"
 alias gitrc="nvim ~/.gitconfig"
@@ -15,6 +14,12 @@ alias l="ls -la"
 alias ...="cd ../.."
 alias ..="cd .."
 
+function nvimrc {
+  cd ~/.config/nvim
+  nvim .
+}
+
+
 # Git
 alias ga="git add"
 alias gp="git push"
@@ -23,7 +28,7 @@ alias gti="git"
 
 function gx() {
   ga $1
-  gcm $2
+  gcm {$2:-"update"}
   gp
 }
 
@@ -45,7 +50,7 @@ function gxconf() {
   local p=$(pwd)
 
   cd ~/Development/System-Config/
-  gx . "update"
+  gx .
 
   cd $p
 }

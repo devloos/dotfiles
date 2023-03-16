@@ -73,6 +73,10 @@ local servers = {
 	[6] = "volar",
 	[7] = "texlab",
 	[8] = "rust_analyzer",
+	[9] = "cmake",
+	[10] = "jsonls",
+	[11] = "tsserver",
+	[12] = "eslint",
 }
 
 for _, server in ipairs(servers) do

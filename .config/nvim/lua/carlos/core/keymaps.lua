@@ -1,8 +1,8 @@
+local opts = { noremap = true, silent = true }
+local keymap = vim.api.nvim_set_keymap
+
 -- Sets leader key to the space key
 vim.g.mapleader = " "
-
--- Pulls up explorer
-vim.keymap.set("n", "<leader>vv", vim.cmd.Ex)
 
 -- Split Screen Binds
 vim.keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
@@ -40,8 +40,6 @@ vim.keymap.set("n", "<leader>ps", function()
 end)
 
 -- Vimtex
-local opts = { noremap = true, silent = true }
-local keymap = vim.api.nvim_set_keymap
 keymap("n", "vc", ":VimtexCompile", opts)
 
 -- Lsp jump binds
@@ -52,18 +50,16 @@ vim.keymap.set("n", "gp", function()
 	vim.lsp.buf.hover()
 end) -- get parameter
 
--- Tmux and Window navigator
-vim.g.tmux_navigator_no_mappings = 1
-
-vim.api.nvim_set_keymap("n", "<leader>h", ":<C-U>TmuxNavigateLeft<cr>", { silent = true })
-vim.api.nvim_set_keymap("n", "<leader>j", ":<C-U>TmuxNavigateDown<cr>", { silent = true })
-vim.api.nvim_set_keymap("n", "<leader>k", ":<C-U>TmuxNavigateUp<cr>", { silent = true })
-vim.api.nvim_set_keymap("n", "<leader>l", ":<C-U>TmuxNavigateRight<cr>", { silent = true })
--- vim.api.nvim_set_keymap('n', '<Previous-Mapping>', ':<C-U>TmuxNavigatePrevious<cr>', { silent = true })
-
 -- vim-maximizer
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- nvim-tree
-vim.keymap.set("n", "<leader>f", ":NvimTreeToggle<CR>")
-vim.api.nvim_command('command! NvimTreeToggle lua require("nvim-tree").toggle()')
+vim.keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle tree open/close
+keymap("n", "<leader>e", "<C-w>h", opts) -- toggle cursor to tree
+keymap("n", "<leader>f", "<C-w>l", opts) -- toggle cursor back to open file
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz") -- cursor stays in middle
+vim.keymap.set("n", "<C-u>", "<C-u>zz") -- when halfpage jumping
+vim.keymap.set("n", "<S-g>", "<S-g>zz") -- cursor stays in middle
+vim.keymap.set("n", "}", "}zz") -- cursor stays in middle
+vim.keymap.set("n", "{", "{zz") -- cursor stays in middle
