@@ -28,7 +28,7 @@ alias gti="git"
 
 function gx() {
   ga $1
-  gcm ${2-"update"}
+  gcm ${2:-"update"}
   gp
 }
 
