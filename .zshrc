@@ -27,9 +27,8 @@ alias gcm="git commit -m"
 alias gti="git"
 
 function gx() {
-  local arg2="${2:-"update"}"
   ga $1
-  gcm arg2
+  gcm ${2-"update"}
   gp
 }
 
