@@ -4,6 +4,10 @@ local keymap = vim.api.nvim_set_keymap
 -- Sets leader key to the space key
 vim.g.mapleader = " "
 
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("x", "<leader>p", '"_dP')
+
 -- Split Screen Binds
 vim.keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 vim.keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
