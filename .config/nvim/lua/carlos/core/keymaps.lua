@@ -27,6 +27,7 @@ end)
 vim.keymap.set("n", "<leader>g", function()
 	require("harpoon.ui").toggle_quick_menu()
 end)
+
 -- vim.keymap.set('n', '<leader>h', function() require("harpoon.ui").nav_file(1) end)
 -- vim.keymap.set('n', '<leader>j', function() require("harpoon.ui").nav_file(2) end)
 -- vim.keymap.set('n', '<leader>k', function() require("harpoon.ui").nav_file(3) end)
