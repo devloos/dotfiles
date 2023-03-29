@@ -1,6 +1,6 @@
 ### System Config
 
-- This is useful to set up my dev enviroment from scratch\*
+![neofetch](assets/neofetch.png)
 
 ### Package Manager List
 
@@ -14,7 +14,7 @@
 | symfony-cli | mongodb-database-tools | mongosh           |
 | php         | heroku                 | tree-sitter       |
 | cppcheck    | curl                   | llvm              |
-| mysql       | python@3.10            | cmake
+| mysql       | python@3.10            | cmake             |
 
 ### Configs
 
