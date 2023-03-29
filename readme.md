@@ -14,7 +14,7 @@
 | symfony-cli | mongodb-database-tools | mongosh           |
 | php         | heroku                 | tree-sitter       |
 | cppcheck    | curl                   | llvm              |
-| mysql       | python@3.10            |
+| mysql       | python@3.10            | cmake
 
 ### Configs
 
