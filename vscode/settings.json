@@ -1,4 +1,10 @@
 {
+  // Vscode
+  "window.zoomLevel": 0.5,
+  "git.openRepositoryInParentFolders": "always",
+  "security.workspace.trust.untrustedFiles": "open",
+  "extensions.ignoreRecommendations": true,
+
   // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -14,12 +20,12 @@
   "editor.lineNumbers": "relative",
   "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "off",
-  "window.zoomLevel": 0.5,
-  "git.openRepositoryInParentFolders": "always",
-
-  // Misc.
-  "security.workspace.trust.untrustedFiles": "open",
-  "extensions.ignoreRecommendations": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleReferences": "goto",
 
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
@@ -78,6 +84,7 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
 
+  // vim keybindings
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     {

@@ -20,11 +20,6 @@
     "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
   },
   {
-    "key": "cmd+backspace",
-    "command": "-workbench.action.terminal.killInstance",
-    "when": "terminalHasBeenCreated && terminalTabsFocus || terminalIsOpen && terminalTabsFocus || terminalProcessSupported && terminalTabsFocus"
-  },
-  {
     "key": "alt+z",
     "command": "-workbench.action.terminal.sizeToContentWidth",
     "when": "terminalFocus && terminalHasBeenCreated && terminalIsOpen || terminalFocus && terminalIsOpen && terminalProcessSupported"
@@ -60,15 +55,8 @@
     "when": "explorerViewletFocus"
   },
   {
-    "key": "ctrl+m",
-    "command": "vscode-harpoon.addEditor"
-  },
-  {
-    "key": "ctrl+;",
-    "command": "vscode-harpoon.editEditors"
-  },
-  {
-    "key": "ctrl+i",
-    "command": "vscode-harpoon.editorQuickPick"
+    "key": "g t",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   }
 ]

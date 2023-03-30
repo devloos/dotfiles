@@ -30,6 +30,7 @@ end
 return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
+	use("ThePrimeagen/vim-be-good")
 
 	use("ThePrimeagen/harpoon")
 
