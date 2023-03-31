@@ -55,8 +55,8 @@
     "when": "explorerViewletFocus"
   },
   {
-    "key": "g t",
+    "key": "shift+cmd+i",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
-  }
+  },
 ]

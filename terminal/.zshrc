@@ -35,6 +35,7 @@ alias ga="git add"
 alias gp="git push"
 alias gcm="git commit -m"
 alias gti="git"
+alias gom="git pull origin master"
 
 function gx() {
   ga $1
