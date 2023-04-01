@@ -4,8 +4,15 @@ local keymap = vim.api.nvim_set_keymap
 -- Sets leader key to the space key
 vim.g.mapleader = " "
 
+-- motion
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("n", "<C-d>", "<C-d>zz") -- cursor stays in middle
+vim.keymap.set("n", "<C-u>", "<C-u>zz") -- when halfpage jumping
+vim.keymap.set("n", "<S-g>", "<S-g>zz") -- cursor stays in middle
+vim.keymap.set("n", "}", "}zz") -- cursor stays in middle
+vim.keymap.set("n", "{", "{zz") -- cursor stays in middle
+
 -- x mode is when your highlighting over something
 vim.keymap.set("x", "<leader>p", '"_dP')
 
@@ -48,21 +55,15 @@ end)
 -- Vimtex
 keymap("n", "vc", ":VimtexCompile", opts)
 
--- Lsp jump binds
+-- goto
 vim.keymap.set("n", "<C-i>", function()
 	vim.lsp.buf.definition()
-end) -- go to
+end)
 
 -- vim-maximizer
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- nvim-tree
 vim.keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>") -- toggle tree open/close
-keymap("n", "<leader>e", "<C-w>h", opts) -- toggle cursor to tree
-keymap("n", "<leader>f", "<C-w>l", opts) -- toggle cursor back to open file
-
-vim.keymap.set("n", "<C-d>", "<C-d>zz") -- cursor stays in middle
-vim.keymap.set("n", "<C-u>", "<C-u>zz") -- when halfpage jumping
-vim.keymap.set("n", "<S-g>", "<S-g>zz") -- cursor stays in middle
-vim.keymap.set("n", "}", "}zz") -- cursor stays in middle
-vim.keymap.set("n", "{", "{zz") -- cursor stays in middle
+keymap("n", "<C-n>", "<C-w>h", opts) -- toggle cursor to tree
+keymap("n", "<C-m>", "<C-w>l", opts) -- toggle cursor back to open file
