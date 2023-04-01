@@ -60,7 +60,7 @@
     "command": "workbench.action.toggleSidebarVisibility"
   },
 
-  // deleted
+  // deleted keybinding from here down
   {
     "key": "ctrl+n",
     "command": "-cursorDown",
