@@ -16,7 +16,7 @@ opt.relativenumber = true
 
 -- cursor line
 opt.cursorline = true
-opt.cc = "80"
+opt.cc = "90"
 opt.mouse = "a"
 
 opt.iskeyword:append("-")

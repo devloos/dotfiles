@@ -6,6 +6,7 @@ vim.g.mapleader = " "
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+-- x mode is when your highlighting over something
 vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- Split Screen Binds
@@ -21,12 +22,12 @@ vim.keymap.set("n", "<leader>tn", ":tabn<CR>") -- go to next tab
 vim.keymap.set("n", "<leader>tp", ":tabp<CR>") -- go to prev tab
 
 -- Harpoon
-vim.keymap.set("n", "<leader>m", function()
-	require("harpoon.mark").add_file()
-end)
-vim.keymap.set("n", "<leader>g", function()
-	require("harpoon.ui").toggle_quick_menu()
-end)
+-- vim.keymap.set("n", "<leader>m", function()
+-- 	require("harpoon.mark").add_file()
+-- end)
+-- vim.keymap.set("n", "<leader>g", function()
+-- 	require("harpoon.ui").toggle_quick_menu()
+-- end)
 
 -- vim.keymap.set('n', '<leader>h', function() require("harpoon.ui").nav_file(1) end)
 -- vim.keymap.set('n', '<leader>j', function() require("harpoon.ui").nav_file(2) end)
@@ -48,12 +49,9 @@ end)
 keymap("n", "vc", ":VimtexCompile", opts)
 
 -- Lsp jump binds
-vim.keymap.set("n", "gt", function()
+vim.keymap.set("n", "<C-i>", function()
 	vim.lsp.buf.definition()
 end) -- go to
-vim.keymap.set("n", "gp", function()
-	vim.lsp.buf.hover()
-end) -- get parameter
 
 -- vim-maximizer
 vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
