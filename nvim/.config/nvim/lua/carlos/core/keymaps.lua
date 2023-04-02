@@ -65,3 +65,5 @@ vim.keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
 
 -- nvim-tree
 vim.keymap.set("n", "<C-f>", ":NvimTreeToggle<CR>") -- toggle tree open/close
+keymap("n", "<C-n>", "<C-w>h", opts) -- toggle cursor to tree
+keymap("n", "<C-m>", "<C-w>l", opts) -- toggle cursor back to open file
