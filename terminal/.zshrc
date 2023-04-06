@@ -48,7 +48,7 @@ alias ec="cd ~/Developer/CC/Empty-Main"
 alias ej="cd ~/Developer/Java/Empty-Main"
 alias er="cd ~/Developer/Rust/empty_main/"
 alias lc="cd ~/Developer/Leetcode"
-alias tic="cd ~/Developer/Projects/Java-Tic-Tac-Toe"
+alias st="cd ~/Developer/Projects/Street-Fighter"
 
 alias admin-api="cd /var/www/ethika-admin-api/"
 alias admin-vue="cd /var/www/ethika-admin-vue-cli/"
