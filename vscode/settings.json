@@ -66,6 +66,7 @@
   },
 
   // Frontend settings
+  "liveServer.settings.donotShowInfoMsg": true,
   "prettier.singleQuote": true,
   "prettier.printWidth": 90,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -106,7 +107,28 @@
     {
       "before": ["}"],
       "after": ["}", "z", "z"]
+    },
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z", "z", "v"]
+    },
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z", "z", "v"]
     }
   ],
-  "liveServer.settings.donotShowInfoMsg": true
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "_", "d", "P"]
+    }
+    // {
+    //   "before": ["J"],
+    //   "after": [":", "m", "'", ">", "+", "1", "<CR>", "g", "v", "=", "g", "v"]
+    // },
+    // {
+    //   "before": ["K"],
+    //   "after": [":", "m", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
+    // }
+  ]
 }

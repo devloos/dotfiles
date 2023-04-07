@@ -1,5 +1,6 @@
 [
   { "key": "cmd+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
+  { "key": "cmd+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
   {
     "key": "cmd+j",
     "command": "workbench.action.terminal.toggleTerminal",
@@ -14,11 +15,6 @@
     "key": "shift+cmd+a",
     "command": "workbench.action.search.toggleQueryDetails",
     "when": "inSearchEditor || searchViewletFocus"
-  },
-  {
-    "key": "cmd+m",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
   },
   {
     "key": "ctrl+i",
@@ -66,6 +62,20 @@
   {
     "key": "ctrl+h",
     "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "enter",
+    "command": "list.select",
+    "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
 
   // deleted keybinding from here down
@@ -156,5 +166,24 @@
     "key": "ctrl+l",
     "command": "-notebook.centerActiveCell",
     "when": "notebookEditorFocused"
+  },
+  {
+    "key": "shift+cmd+,",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+k cmd+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "enter",
+    "command": "-renameFile",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "l",
+    "command": "-list.select",
+    "when": "listFocus && !inputFocus"
   }
 ]
