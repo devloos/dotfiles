@@ -9,11 +9,7 @@ alias fishrc="nvim ~/.config/fish/config.fish"
 alias zshrc="nvim ~/.zshrc"
 alias gitrc="nvim ~/.gitconfig"
 alias tmuxrc="nvim ~/.tmux.conf"
-
-function nvimrc {
-  cd ~/.config/nvim
-  nvim .
-}
+alias nvimrc="nvim ~/.config/nvim"
 
 # Movement
 alias l="ls -la"
