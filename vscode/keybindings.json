@@ -1,6 +1,14 @@
 [
-  { "key": "cmd+n", "command": "explorer.newFile", "when": "explorerViewletFocus" },
-  { "key": "cmd+m", "command": "explorer.newFolder", "when": "explorerViewletFocus" },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "cmd+m",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
   {
     "key": "cmd+j",
     "command": "workbench.action.terminal.toggleTerminal",
@@ -76,6 +84,10 @@
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.view.remote"
   },
 
   // deleted keybinding from here down
@@ -185,5 +197,30 @@
     "key": "l",
     "command": "-list.select",
     "when": "listFocus && !inputFocus"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "-rerunSearchEditorSearch",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "cmd+numpad_add",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+numpad_subtract",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+numpad0",
+    "command": "-workbench.action.zoomReset"
   }
 ]

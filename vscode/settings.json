@@ -32,8 +32,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.activityBar.visible": false,
-
-  // Selection Highlighting Disabled
   "workbench.colorCustomizations": {
     "editor.selectionHighlightBackground": "#0000", // similar selection
     "editor.selectionHighlightBorder": "#0000",
@@ -124,11 +122,11 @@
     }
     // {
     //   "before": ["J"],
-    //   "after": [":", "m", "'", ">", "+", "1", "<CR>", "g", "v", "=", "g", "v"]
+    //   "after": [":", "m", " ", "'", ">", "+", "1", "<CR>", "g", "v", "=", "g", "v"]
     // },
     // {
     //   "before": ["K"],
-    //   "after": [":", "m", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
+    //   "after": [":", "m", " ", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
     // }
   ]
 }
