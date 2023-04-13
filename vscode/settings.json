@@ -4,7 +4,7 @@
   "git.openRepositoryInParentFolders": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "extensions.ignoreRecommendations": true,
-  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.defaultLanguage": "plaintext",
 
   // Explorer
   "explorer.confirmDragAndDrop": false,
