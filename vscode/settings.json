@@ -128,5 +128,8 @@
     //   "before": ["K"],
     //   "after": [":", "m", " ", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
     // }
-  ]
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  }
 }

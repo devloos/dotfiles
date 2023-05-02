@@ -40,16 +40,6 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
   {
-    "key": "ctrl+k",
-    "command": "showPrevParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
-    "key": "ctrl+j",
-    "command": "showNextParameterHint",
-    "when": "editorFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
-  },
-  {
     "key": "ctrl+n",
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
