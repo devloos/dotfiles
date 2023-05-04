@@ -1,7 +1,7 @@
 [user]
   name = Carlos Aguilera
   email = 18aguilerac@gmail.com
-	signingkey = /Users/ca/.ssh/Public-Keys/local-gitkey.pub
+	signingkey = ~/.ssh/Private-Keys/local-gitkey
 
 [alias]
   cam = commit -am
