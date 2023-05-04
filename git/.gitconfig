@@ -1,6 +1,7 @@
 [user]
   name = Carlos Aguilera
   email = 18aguilerac@gmail.com
+	signingkey = /Users/ca/.ssh/Private-Keys/local-gitkey
 
 [alias]
   cam = commit -am
@@ -15,3 +16,9 @@
 
 [pull]
   default = current
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	format = ssh
