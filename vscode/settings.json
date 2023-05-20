@@ -11,7 +11,7 @@
   "explorer.confirmDelete": false,
 
   // Editor
-  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Fira Code, Menlo",
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
@@ -50,7 +50,10 @@
     { "name": "scm", "codicon": "source-control-view-icon" },
     { "name": "debug", "codicon": "run-view-icon" },
     { "name": "extensions", "codicon": "extensions-view-icon" },
-    { "name": "command.workbench.view.remote", "codicon": "remote-explorer-view-icon" },
+    {
+      "name": "command.workbench.view.remote",
+      "codicon": "remote-explorer-view-icon"
+    },
     { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
   ],
 
@@ -65,21 +68,20 @@
 
   // Frontend settings
   "liveServer.settings.donotShowInfoMsg": true,
-  "prettier.singleQuote": true,
-  "prettier.printWidth": 90,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "[php]": {
     "editor.defaultFormatter": null
   },
-
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
-
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
 
   // vim keybindings
@@ -120,16 +122,5 @@
       "before": ["<leader>", "p"],
       "after": ["\"", "_", "d", "P"]
     }
-    // {
-    //   "before": ["J"],
-    //   "after": [":", "m", " ", "'", ">", "+", "1", "<CR>", "g", "v", "=", "g", "v"]
-    // },
-    // {
-    //   "before": ["K"],
-    //   "after": [":", "m", " ", "'", "<", "-", "2", "<CR>", "g", "v", "=", "g", "v"]
-    // }
-  ],
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  }
+  ]
 }
