@@ -42,10 +42,12 @@ function gx() {
 
 # Folder Movement
 alias ec="cd ~/Developer/CC/Empty-Main"
-alias ej="cd ~/Developer/Java/Empty-Main"
 alias er="cd ~/Developer/Rust/empty_main/"
 alias lc="cd ~/Developer/Leetcode"
-alias st="cd ~/Developer/Projects/Street-Fighter"
+alias andariego-vue="cd ~/Developer/Projects/El-Andariego/el-andariego-cli"
+alias andariego-api="cd ~/Developer/Projects/El-Andariego/el-andariego-api"
+alias portfolio-vue="cd ~/Developer/Projects/Portfolio/portfolio-vue"
+alias portfolio-api="cd ~/Developer/Projects/Portfolio/portfolio-api"
 
 alias admin-api="cd /var/www/ethika-admin-api/"
 alias admin-vue="cd /var/www/ethika-admin-vue-cli/"
