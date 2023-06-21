@@ -44,7 +44,7 @@ function gx() {
 alias ec="cd ~/Developer/CC/Empty-Main"
 alias er="cd ~/Developer/Rust/empty_main/"
 alias lc="cd ~/Developer/Leetcode"
-alias andariego-vue="cd ~/Developer/Projects/El-Andariego/el-andariego-cli"
+alias andariego-vue="cd ~/Developer/Projects/El-Andariego/el-andariego-vue"
 alias andariego-api="cd ~/Developer/Projects/El-Andariego/el-andariego-api"
 alias portfolio-vue="cd ~/Developer/Projects/Portfolio/portfolio-vue"
 alias portfolio-api="cd ~/Developer/Projects/Portfolio/portfolio-api"

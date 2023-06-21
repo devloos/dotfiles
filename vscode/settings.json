@@ -27,6 +27,7 @@
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
@@ -56,33 +57,6 @@
     },
     { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
   ],
-
-  // C++ Settings
-  "C_Cpp.default.cppStandard": "c++20",
-  "C_Cpp.default.cStandard": "c17",
-  "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-  "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
-  "[cpp]": {
-    "editor.defaultFormatter": null
-  },
-
-  // Frontend settings
-  "liveServer.settings.donotShowInfoMsg": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-
-  "[php]": {
-    "editor.defaultFormatter": null
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-  "[rust]": {
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
 
   // vim keybindings
   "vim.leader": "<space>",
