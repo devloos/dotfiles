@@ -58,6 +58,9 @@
     { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
   ],
 
+  // Web Development
+  "tailwindCSS.colorDecorators": false,
+
   // vim keybindings
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
