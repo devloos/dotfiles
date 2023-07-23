@@ -19,8 +19,6 @@ opt.cursorline = true
 opt.cc = "90"
 opt.mouse = "a"
 
-opt.iskeyword:append("-")
-
 -- vim.opt.clipboard = "unnamedplus" -- this is one way clipboard copying
 opt.clipboard = "unnamed" -- this is two way clipboard copying. beware everything outside of vim register will be there now
 
