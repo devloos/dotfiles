@@ -11,6 +11,7 @@ alias zshrc="nvim ~/.zshrc"
 alias gitrc="nvim ~/.gitconfig"
 alias tmuxrc="nvim ~/.tmux.conf"
 alias nvimrc="nvim ~/.config/nvim"
+alias nginxrc="nvim /opt/homebrew/etc/nginx"
 
 # Movement
 alias l="ls -la"
@@ -53,6 +54,9 @@ alias admin-api="cd /var/www/ethika-admin-api/"
 alias admin-vue="cd /var/www/ethika-admin-vue-cli/"
 alias site-api="cd /var/www/ethika-site-api/"
 alias site-vue="cd /var/www/ethika-site-vue-cli/"
+alias music-vue="cd /var/www/ethika-music-vue/"
+alias music-api="cd /var/www/ethika-music-api/"
+alias music-cms-vue="cd /var/www/ethika-music-cms-vue/"
 alias common="cd /var/www/ethika-common/"
 
 # Shortcuts
