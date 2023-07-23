@@ -6,7 +6,6 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 alias srczsh="source ~/.zshrc"
 
 # Config
-alias fishrc="nvim ~/.config/fish/config.fish"
 alias zshrc="nvim ~/.zshrc"
 alias gitrc="nvim ~/.gitconfig"
 alias tmuxrc="nvim ~/.tmux.conf"
