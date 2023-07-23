@@ -1,6 +1,4 @@
 {
-  // Vscode
-  "window.zoomLevel": 0.5,
   "git.openRepositoryInParentFolders": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "extensions.ignoreRecommendations": true,
@@ -60,6 +58,9 @@
 
   // Web Development
   "tailwindCSS.colorDecorators": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
 
   // vim keybindings
   "vim.leader": "<space>",
@@ -99,5 +100,6 @@
       "before": ["<leader>", "p"],
       "after": ["\"", "_", "d", "P"]
     }
-  ]
+  ],
+  "window.zoomLevel": 0.5
 }
