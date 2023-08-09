@@ -99,3 +99,7 @@
 **CPP**
 
 > Run diagnostics on memory management (similar to valgrind) `leaks`
+
+**GIT**
+
+> Delete all branches except master `git branch --merged | grep -v \* | xargs git branch -D `
