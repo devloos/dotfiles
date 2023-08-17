@@ -100,6 +100,7 @@
       "before": ["<leader>", "p"],
       "after": ["\"", "_", "d", "P"]
     }
-],
-"window.zoomLevel": 0.5
+  ],
+  "window.zoomLevel": 0.5,
+  "redhat.telemetry.enabled": true
 }
