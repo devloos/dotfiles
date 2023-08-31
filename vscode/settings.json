@@ -101,7 +101,7 @@
       "after": ["\"", "_", "d", "P"]
     }
   ],
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.35,
   "redhat.telemetry.enabled": true,
   "liveServer.settings.donotVerifyTags": true
 }
