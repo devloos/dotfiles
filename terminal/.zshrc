@@ -52,6 +52,7 @@ alias andariego-vue="cd ~/Developer/Projects/El-Andariego/el-andariego-vue"
 alias andariego-api="cd ~/Developer/Projects/El-Andariego/el-andariego-api"
 alias portfolio-vue="cd ~/Developer/Projects/Portfolio/portfolio-vue"
 alias portfolio-api="cd ~/Developer/Projects/Portfolio/portfolio-api"
+alias psw="cd ~/Documents/Passwords/"
 
 alias admin-api="cd /var/www/ethika-admin-api/"
 alias admin-vue="cd /var/www/ethika-admin-vue-cli/"
