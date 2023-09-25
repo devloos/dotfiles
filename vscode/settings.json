@@ -9,6 +9,7 @@
   "explorer.confirmDelete": false,
 
   // Editor
+  "window.zoomLevel": 0.35,
   "editor.fontFamily": "Fira Code, Menlo",
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
@@ -101,7 +102,11 @@
       "after": ["\"", "_", "d", "P"]
     }
   ],
-  "window.zoomLevel": 0.35,
+
   "redhat.telemetry.enabled": true,
-  "liveServer.settings.donotVerifyTags": true
+  "liveServer.settings.donotVerifyTags": true,
+
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  }
 }
