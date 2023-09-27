@@ -102,4 +102,4 @@
 
 **GIT**
 
-> Delete all branches except master `git branch --merged | grep -v \* | xargs git branch -D `
+> Delete all branches except master `git branch | grep -v "master" | xargs git branch -D`
