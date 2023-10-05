@@ -98,7 +98,7 @@
 
 **CPP**
 
-> Run diagnostics on memory management (similar to valgrind) `leaks`
+> Run diagnostics on memory management (similar to valgrind) `leaks --atExit -- ./YOUR_PROGRAM_NAME`
 
 **GIT**
 
