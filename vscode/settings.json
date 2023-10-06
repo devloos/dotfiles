@@ -108,5 +108,6 @@
 
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  }
+  },
+  "liveServer.settings.donotShowInfoMsg": true
 }

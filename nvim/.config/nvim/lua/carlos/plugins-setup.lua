@@ -38,8 +38,6 @@ return packer.startup(function(use)
 
 	use("Mofiqul/vscode.nvim") -- preferred colorscheme
 
-	use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
-
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- essential plugins
