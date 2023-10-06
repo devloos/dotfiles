@@ -31,35 +31,20 @@ return packer.startup(function(use)
 	-- packer can manage itself
 	use("wbthomason/packer.nvim")
 	use("ThePrimeagen/vim-be-good")
-
 	use("ThePrimeagen/harpoon")
 
 	use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-
 	use("Mofiqul/vscode.nvim") -- preferred colorscheme
-
 	use("szw/vim-maximizer") -- maximizes and restores current window
 
 	-- essential plugins
 	use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
-	-- commenting with gc
-	use({
-		"numToStr/Comment.nvim",
-		config = function()
-			require("Comment").setup()
-		end,
-	})
-
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
-
-	-- vs-code like icons
-	use("nvim-tree/nvim-web-devicons")
-
-	-- statusline
-	use("nvim-lualine/lualine.nvim")
+	use("nvim-tree/nvim-web-devicons") -- vs-code like icons
+	use("nvim-lualine/lualine.nvim") -- statusline
 
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
@@ -97,6 +82,18 @@ return packer.startup(function(use)
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
+	-- auto closing
+	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
+	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
+
+	-- commenting with gc
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
+
 	-- treesitter configuration
 	use({
 		"nvim-treesitter/nvim-treesitter",
@@ -105,10 +102,6 @@ return packer.startup(function(use)
 			ts_update()
 		end,
 	})
-
-	-- auto closing
-	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
-	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
 	use({
