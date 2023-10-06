@@ -45,7 +45,12 @@ return packer.startup(function(use)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
 
 	-- commenting with gc
-	use("numToStr/Comment.nvim")
+	use({
+		"numToStr/Comment.nvim",
+		config = function()
+			require("Comment").setup()
+		end,
+	})
 
 	-- file explorer
 	use("nvim-tree/nvim-tree.lua")
@@ -106,7 +111,12 @@ return packer.startup(function(use)
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
 
 	-- git integration
-	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
+	use({
+		"lewis6991/gitsigns.nvim",
+		config = function()
+			require("gitsigns").setup()
+		end,
+	}) -- show line modifications on left hand side
 
 	if packer_bootstrap then
 		require("packer").sync()
