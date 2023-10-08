@@ -38,8 +38,14 @@
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
+  "[c]": {
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
   },
 
   // Workbench
