@@ -35,6 +35,7 @@ mason_lspconfig.setup({
 		"volar",
 		"rust_analyzer",
 		"cmake",
+		"intelephense",
 	},
 
 	automatic_installation = true,

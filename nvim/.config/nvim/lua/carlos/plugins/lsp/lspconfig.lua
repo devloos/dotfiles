@@ -49,6 +49,7 @@ local servers = {
 	[10] = "jsonls",
 	[11] = "tsserver",
 	[12] = "eslint",
+	[13] = "intelephense",
 }
 
 for _, server in ipairs(servers) do

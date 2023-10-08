@@ -26,7 +26,15 @@
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
+
+  // Formatters
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
 
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
@@ -105,9 +113,5 @@
 
   "redhat.telemetry.enabled": true,
   "liveServer.settings.donotVerifyTags": true,
-
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
   "liveServer.settings.donotShowInfoMsg": true
 }
