@@ -43,7 +43,6 @@ local servers = {
 	[4] = "clangd",
 	[5] = "jdtls",
 	[6] = "volar",
-	[7] = "texlab",
 	[8] = "rust_analyzer",
 	[9] = "cmake",
 	[10] = "jsonls",

@@ -36,6 +36,7 @@ mason_lspconfig.setup({
 		"rust_analyzer",
 		"cmake",
 		"intelephense",
+		"tsserver",
 		"pyright",
 	},
 
@@ -50,9 +51,8 @@ mason_null_ls.setup({
 		"stylua",
 		"rustfmt",
 		"eslint_d",
-		"chktex",
-		"cppcheck",
 		"autopep8",
+		"phpcbf",
 	},
 
 	automatic_installation = true,
