@@ -36,23 +36,23 @@ mason_lspconfig.setup({
 		"rust_analyzer",
 		"cmake",
 		"intelephense",
+		"pyright",
 	},
 
 	automatic_installation = true,
 })
 
--- formatters linters
+-- formatters and linters
 mason_null_ls.setup({
 	ensure_installed = {
-		-- formatters
 		"prettier",
 		"clang_format",
 		"stylua",
 		"rustfmt",
-		-- linters
 		"eslint_d",
 		"chktex",
 		"cppcheck",
+		"autopep8",
 	},
 
 	automatic_installation = true,

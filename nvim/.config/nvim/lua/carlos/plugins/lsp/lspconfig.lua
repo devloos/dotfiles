@@ -50,6 +50,7 @@ local servers = {
 	[11] = "tsserver",
 	[12] = "eslint",
 	[13] = "intelephense",
+	[14] = "pyright",
 }
 
 for _, server in ipairs(servers) do

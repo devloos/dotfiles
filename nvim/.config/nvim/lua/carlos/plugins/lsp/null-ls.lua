@@ -24,6 +24,7 @@ null_ls.setup({
 		formatting.stylua, -- lua formatter
 		formatting.clang_format, -- c++ formatter
 		formatting.rustfmt, -- rust formatter
+		formatting.autopep8,
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)
