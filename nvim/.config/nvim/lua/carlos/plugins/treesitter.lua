@@ -29,6 +29,7 @@ treesitter.setup({
 		"rust",
 		"cmake",
 		"php",
+		"python",
 	},
 
 	auto_install = true,
