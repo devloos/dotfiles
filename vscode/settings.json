@@ -18,7 +18,6 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "relative",
-  "editor.formatOnSave": true,
   "editor.inlayHints.enabled": "off",
   "editor.inlineSuggest.enabled": true,
   "editor.gotoLocation.multipleDefinitions": "goto",
@@ -27,12 +26,15 @@
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
 
-  // Formatters
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
   "[php]": {
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "kokororin.vscode-phpfmt"
   },
   "[python]": {
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"
   },
   "[cpp]": {
@@ -42,6 +44,7 @@
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "[rust]": {
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[java]": {
