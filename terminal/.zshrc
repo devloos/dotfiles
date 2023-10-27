@@ -98,3 +98,5 @@ source $ZSH/oh-my-zsh.sh
 # powerlevel10k
 
 export PATH=/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/Users/ca/.composer/vendor/bin
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
