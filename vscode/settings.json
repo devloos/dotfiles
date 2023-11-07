@@ -32,7 +32,6 @@
 
   "[php]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
   },
   "[python]": {
     "editor.tabSize": 4,
