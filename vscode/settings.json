@@ -31,7 +31,7 @@
   "editor.formatOnSave": true,
 
   "[php]": {
-    "editor.tabSize": 4,
+    "editor.tabSize": 4
   },
   "[python]": {
     "editor.tabSize": 4,
@@ -52,9 +52,9 @@
   },
 
   // Workbench
+  "workbench.activityBar.location": "top",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
-  "workbench.activityBar.visible": false,
   "workbench.colorCustomizations": {
     "editor.selectionHighlightBackground": "#0000", // similar selection
     "editor.selectionHighlightBorder": "#0000",
@@ -65,20 +65,6 @@
     "editorBracketMatch.background": "#0000",
     "editor.background": "#202020"
   },
-
-  // Activity Bar
-  "activitusbar.views": [
-    { "name": "explorer", "codicon": "explorer-view-icon" },
-    { "name": "search", "codicon": "search-view-icon" },
-    { "name": "scm", "codicon": "source-control-view-icon" },
-    { "name": "debug", "codicon": "run-view-icon" },
-    { "name": "extensions", "codicon": "extensions-view-icon" },
-    {
-      "name": "command.workbench.view.remote",
-      "codicon": "remote-explorer-view-icon"
-    },
-    { "name": "command.workbench.action.reloadWindow", "codicon": "refresh" }
-  ],
 
   // Web Development
   "tailwindCSS.colorDecorators": false,
