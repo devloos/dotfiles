@@ -1,118 +1,116 @@
 {
-  "git.openRepositoryInParentFolders": "always",
-  "security.workspace.trust.untrustedFiles": "open",
-  "extensions.ignoreRecommendations": true,
-  "files.defaultLanguage": "plaintext",
-
-  // Explorer
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "explorer.compactFolders": false,
-
-  // Editor
-  "window.zoomLevel": 0.35,
-  "editor.fontFamily": "Fira Code, Menlo",
-  "editor.minimap.enabled": false,
-  "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
-  "editor.guides.indentation": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.lineNumbers": "relative",
-  "editor.inlayHints.enabled": "off",
-  "editor.inlineSuggest.enabled": true,
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.gotoLocation.multipleDeclarations": "goto",
-  "editor.gotoLocation.multipleImplementations": "goto",
-  "editor.gotoLocation.multipleReferences": "goto",
-
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-
-  "[php]": {
-    "editor.tabSize": 4
-  },
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "ms-python.autopep8"
-  },
-  "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
-  },
-  "[c]": {
-    "editor.defaultFormatter": "xaver.clang-format"
-  },
-  "[rust]": {
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java"
-  },
-
-  // Workbench
-  "workbench.activityBar.location": "top",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "workbench.colorCustomizations": {
-    "editor.selectionHighlightBackground": "#0000", // similar selection
-    "editor.selectionHighlightBorder": "#0000",
-    "editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
-    "editor.wordHighlightStrongBorder": "#0000",
-    "editor.wordHighlightBackground": "#0000", // syntax variable
-    "editor.wordHighlightBorder": "#0000",
-    "editorBracketMatch.background": "#0000",
-    "editor.background": "#202020"
-  },
-
-  // Web Development
-  "tailwindCSS.colorDecorators": false,
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-
-  // vim keybindings
-  "vim.leader": "<space>",
-  "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["<C-d>"],
-      "after": ["<C-d>", "z", "z"]
+    "git.openRepositoryInParentFolders": "always",
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.ignoreRecommendations": true,
+    "files.defaultLanguage": "plaintext",
+  
+    // Explorer
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
+    "window.zoomLevel": 0.35,
+    "editor.fontFamily": "Fira Code, Menlo",
+    "editor.minimap.enabled": false,
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.guides.indentation": true,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "editor.lineNumbers": "relative",
+    "editor.inlayHints.enabled": "off",
+    "editor.inlineSuggest.enabled": true,
+    "editor.gotoLocation.multipleDefinitions": "goto",
+    "editor.gotoLocation.multipleTypeDefinitions": "goto",
+    "editor.gotoLocation.multipleDeclarations": "goto",
+    "editor.gotoLocation.multipleImplementations": "goto",
+    "editor.gotoLocation.multipleReferences": "goto",
+  
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  
+    "[php]": {
+      "editor.tabSize": 4
     },
-    {
-      "before": ["<C-u>"],
-      "after": ["<C-u>", "z", "z"]
+    "[python]": {
+      "editor.tabSize": 4,
+      "editor.defaultFormatter": "ms-python.autopep8"
     },
-    {
-      "before": ["<S-g>"],
-      "after": ["<S-g>", "z", "z"]
+    "[cpp]": {
+      "editor.defaultFormatter": "xaver.clang-format"
     },
-    {
-      "before": ["{"],
-      "after": ["{", "z", "z"]
+    "[c]": {
+      "editor.defaultFormatter": "xaver.clang-format"
     },
-    {
-      "before": ["}"],
-      "after": ["}", "z", "z"]
+    "[rust]": {
+      "editor.tabSize": 4,
+      "editor.defaultFormatter": "rust-lang.rust-analyzer"
     },
-    {
-      "before": ["n"],
-      "after": ["n", "z", "z", "z", "v"]
+    "[java]": {
+      "editor.defaultFormatter": "redhat.java"
     },
-    {
-      "before": ["N"],
-      "after": ["N", "z", "z", "z", "v"]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": ["<leader>", "p"],
-      "after": ["\"", "_", "d", "P"]
-    }
-  ],
-
-  "redhat.telemetry.enabled": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true
-}
+  
+    // Workbench
+    "workbench.activityBar.location": "top",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.colorCustomizations": {
+      "editor.selectionHighlightBackground": "#0000", // similar selection
+      "editor.selectionHighlightBorder": "#0000",
+      "editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
+      "editor.wordHighlightStrongBorder": "#0000",
+      "editor.wordHighlightBackground": "#0000", // syntax variable
+      "editor.wordHighlightBorder": "#0000",
+      "editorBracketMatch.background": "#0000",
+      "editor.background": "#202020"
+    },
+  
+    // Web Development
+    "tailwindCSS.colorDecorators": false,
+    "files.associations": {
+      "*.css": "tailwindcss"
+    },
+  
+    // vim keybindings
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["<C-d>"],
+        "after": ["<C-d>", "z", "z"]
+      },
+      {
+        "before": ["<C-u>"],
+        "after": ["<C-u>", "z", "z"]
+      },
+      {
+        "before": ["<S-g>"],
+        "after": ["<S-g>", "z", "z"]
+      },
+      {
+        "before": ["{"],
+        "after": ["{", "z", "z"]
+      },
+      {
+        "before": ["}"],
+        "after": ["}", "z", "z"]
+      },
+      {
+        "before": ["n"],
+        "after": ["n", "z", "z", "z", "v"]
+      },
+      {
+        "before": ["N"],
+        "after": ["N", "z", "z", "z", "v"]
+      }
+    ],
+    "vim.visualModeKeyBindings": [
+      {
+        "before": ["<leader>", "p"],
+        "after": ["\"", "_", "d", "P"]
+      }
+    ],
+  
+    "redhat.telemetry.enabled": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true
+  }
