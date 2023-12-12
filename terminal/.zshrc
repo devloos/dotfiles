@@ -104,3 +104,19 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/Users/ca/.composer/vendor/bin
 export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ca/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ca/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/ca/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ca/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
