@@ -66,16 +66,16 @@ alias common="cd /var/www/ethika-common/"
 
 # Shortcuts
 function gxconf() {
-  cp ~/.zshrc ~/Developer/System-Config/terminal/.zshrc
-  cp ~/Library/Application\ Support/Code/User/settings.json ~/Developer/System-Config/vscode/settings.json
-  cp ~/.gitconfig ~/Developer/System-Config/git/.gitconfig
-  cp ~/Library/Application\ Support/Code/User/keybindings.json ~/Developer/System-Config/vscode/keybindings.json
-  cp -r ~/.config/nvim ~/Developer/System-Config/nvim/.config/
-  cp -r ~/.tmux.conf ~/Developer/System-Config/tmux/.tmux.conf
+  cp ~/.zshrc ~/Developer/dotfiles/terminal/.zshrc
+  cp ~/Library/Application\ Support/Code/User/settings.json ~/Developer/dotfiles/vscode/settings.json
+  cp ~/.gitconfig ~/Developer/dotfiles/git/.gitconfig
+  cp ~/Library/Application\ Support/Code/User/keybindings.json ~/Developer/dotfiles/vscode/keybindings.json
+  cp -r ~/.config/nvim ~/Developer/dotfiles/nvim/.config/
+  cp -r ~/.tmux.conf ~/Developer/dotfiles/tmux/.tmux.conf
 
   local p=$(pwd)
 
-  cd ~/Developer/System-Config/
+  cd ~/Developer/dotfiles/
   gx .
 
   cd $p
