@@ -36,4 +36,5 @@ echo '# Prerequisites
 
 # Custom
 *.DS_Store
-*build/' > .gitignore
+*build/
+' > .gitignore

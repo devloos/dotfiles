@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir include build bin lib src src/core .vscode
-touch bin/.gitkeep include/.gitkeep lib/.gitkeep
+mkdir include build lib src src/core .vscode
+touch include/.gitkeep lib/.gitkeep
 
 -gitignore.sh
 -cmake.sh

@@ -1,13 +1,17 @@
 #!/bin/bash
-
 echo '{
-  "env": {
-    "myDefaultIncludePath": ["${workspaceFolder}", "${workspaceFolder}/include"]
-  },
   "configurations": [
-    { 
-      "name": "mac",
-      "includePath": ["${myDefaultIncludePath}"]
+    {
+      "name": "{PROJECT_NAME}",
+      "includePath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src"
+      ],
+      "cppStandard": "c++20",
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c17",
+      "intelliSenseMode": "macos-clang-arm64"
     }
   ],
   "version": 4
@@ -17,22 +21,18 @@ echo '{
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "lldb",
+      "name": "Debug (lldb)",
+      "type": "cppdbg",
       "request": "launch",
-      "name": "Debug",
       "program": "${workspaceFolder}/build/{EXECUTABLE}",
       "args": [],
-      "cwd": "${workspaceFolder}/build"
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb"
     }
   ]
 }' > .vscode/launch.json
 
-echo '{
-	"C_Cpp.default.cppStandard": "c++20",
-	"C_Cpp.default.cStandard": "c17",
-	"C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-	"C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
-	"[cpp]": {
-		"editor.formatOnSave": true
-	},
-}' > .vscode/settings.json
+echo '{}' > .vscode/settings.json
