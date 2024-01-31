@@ -10,12 +10,12 @@
     "when": "explorerViewletFocus"
   },
   {
-    "key": "cmd+j",
+    "key": "ctrl+;",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "terminal.active"
   },
   {
-    "key": "cmd+backspace",
+    "key": "ctrl+shift+backspace",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
@@ -222,5 +222,38 @@
   {
     "key": "cmd+numpad0",
     "command": "-workbench.action.zoomReset"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.quickOpenNavigateNextInRecentFilesPicker",
+    "when": "inQuickOpen && inRecentFilesPicker"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "-workbench.action.openEditorAtIndex9"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-extension.vim_ctrl+b",
+    "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-cursorLeft",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "cmake.build",
+    "when": "cmake:enableFullFeatureSet && !cmake:hideBuildCommand"
+  },
+  {
+    "key": "f7",
+    "command": "-cmake.build",
+    "when": "cmake:enableFullFeatureSet && !cmake:hideBuildCommand"
   }
 ]

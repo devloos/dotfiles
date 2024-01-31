@@ -35,9 +35,14 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"
   },
+
+  "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+  "cmake.configureOnOpen": true,
+  "cmake.revealLog": "never",
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
+
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
@@ -112,5 +117,6 @@
 
   "redhat.telemetry.enabled": true,
   "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true
+  "liveServer.settings.donotShowInfoMsg": true,
+  "cmake.showOptionsMovedNotification": false
 }
