@@ -8,7 +8,6 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
-  "window.zoomLevel": 0.35,
   "editor.fontFamily": "Fira Code, Menlo",
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
@@ -24,6 +23,7 @@
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
+  "editor.stickyScroll.enabled": false,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
@@ -52,6 +52,8 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
+
+  "keyboard.dispatch": "keyCode",
 
   // Workbench
   "workbench.activityBar.location": "top",
@@ -117,5 +119,9 @@
   "redhat.telemetry.enabled": true,
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "cmake.showOptionsMovedNotification": false
+  "cmake.showOptionsMovedNotification": false,
+  "window.customTitleBarVisibility": "auto",
+  "window.zoomLevel": 0.5,
+  "github.copilot.editor.enableAutoCompletions": false,
+  "terminal.external.osxExec": "Warp.app"
 }

@@ -1,6 +1,6 @@
 # USER CUSTOM
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/Users/ca/.composer/vendor/bin:/opt/homebrew/opt/bison/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -64,6 +64,10 @@ alias music-api="cd /var/www/ethika-music-api/"
 alias music-cms-vue="cd /var/www/ethika-music-cms-vue/"
 alias common="cd /var/www/ethika-common/"
 
+# Python
+alias vact="source .venv/bin/activate"
+alias vdeact="source .venv/bin/deactivate"
+
 # Shortcuts
 function gxconf() {
   cp ~/.zshrc ~/Developer/dotfiles/terminal/.zshrc
@@ -101,8 +105,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # powerlevel10k
 
-export PATH=/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/Users/ca/.composer/vendor/bin
-export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
 
 # >>> conda initialize >>>

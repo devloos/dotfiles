@@ -16,7 +16,6 @@ opt.relativenumber = true
 
 -- cursor line
 opt.cursorline = true
-opt.cc = "90"
 opt.mouse = "a"
 
 -- vim.opt.clipboard = "unnamedplus" -- this is one way clipboard copying
