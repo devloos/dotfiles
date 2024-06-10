@@ -76,7 +76,7 @@ function gxconf() {
   cp ~/Library/Application\ Support/Code/User/keybindings.json ~/Developer/dotfiles/vscode/keybindings.json
   cp -r ~/.config/nvim ~/Developer/dotfiles/nvim/.config/
   cp -r ~/.tmux.conf ~/Developer/dotfiles/tmux/.tmux.conf
-  cp -r ~/.warp/themes ~/Developer/dotfiles/tmux/terminal/themes
+  cp -r ~/.warp/themes ~/Developer/dotfiles/terminal/themes
 
   local p=$(pwd)
 
