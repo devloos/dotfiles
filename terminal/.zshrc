@@ -1,6 +1,12 @@
 # USER CUSTOM
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
-export PATH="/opt/homebrew/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/Users/ca/.composer/vendor/bin:/opt/homebrew/opt/bison/bin:$PATH"
+
+export PATH="System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -123,3 +129,7 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Postgresql
+export LDFLAGS="-L/opt/homebrew/opt/postgresql@16/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"

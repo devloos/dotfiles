@@ -24,20 +24,25 @@
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleReferences": "goto",
   "editor.stickyScroll.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
   "[php]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
+
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"
   },
+
   "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
-  "cmake.configureOnOpen": true,
-  "cmake.revealLog": "never",
+
   "[cpp]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
@@ -45,10 +50,12 @@
   "[c]": {
     "editor.defaultFormatter": "xaver.clang-format"
   },
+
   "[rust]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
+
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
@@ -73,7 +80,11 @@
   // Web Development
   "tailwindCSS.colorDecorators": false,
   "files.associations": {
-    "*.css": "tailwindcss"
+    "*.css": "tailwindcss",
+    "*.html": "twig"
+  },
+  "emmet.includeLanguages": {
+    "twig": "html"
   },
 
   // vim keybindings
@@ -117,11 +128,8 @@
   ],
 
   "redhat.telemetry.enabled": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "cmake.showOptionsMovedNotification": false,
   "window.customTitleBarVisibility": "auto",
   "window.zoomLevel": 0.5,
-  "github.copilot.editor.enableAutoCompletions": false,
-  "terminal.external.osxExec": "Warp.app"
+  "terminal.external.osxExec": "Warp.app",
+  "eslint.format.enable": true
 }
