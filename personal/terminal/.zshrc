@@ -52,7 +52,7 @@ function gxconf() {
   cp ~/.zshrc ~/Developer/dotfiles/personal/terminal/.zshrc
   cp ~/.gitconfig ~/Developer/dotfiles/personal/git/.gitconfig
   cp -r ~/.tmux.conf ~/Developer/dotfiles/personal/tmux/.tmux.conf
-  cp -r ~/.config/nvim ~/Developer/dotfiles/nvim/.config/
+  cp -r ~/.config/nvim ~/Developer/dotfiles
 
   local p=$(pwd)
 
