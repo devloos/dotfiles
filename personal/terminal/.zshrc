@@ -1,3 +1,8 @@
+# THIS IS NEEDED FOR compdef not found
+# https://stackoverflow.com/questions/66338988/complete13-command-not-found-compdef
+autoload -Uz compinit
+compinit
+
 # Aliases
 alias srczsh="source ~/.zshrc"
 
@@ -64,6 +69,9 @@ function gxconf() {
 
 # Keybindings
 bindkey '…' end-of-line
+
+# Sources
+source ~/symfony-completion.sh
 
 # powerlevel10k
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
