@@ -80,8 +80,7 @@
   // Web Development
   "tailwindCSS.colorDecorators": false,
   "files.associations": {
-    "*.css": "tailwindcss",
-    "*.html": "twig"
+    "*.css": "tailwindcss"
   },
   "emmet.includeLanguages": {
     "twig": "html"
@@ -129,8 +128,9 @@
 
   "redhat.telemetry.enabled": true,
   "window.customTitleBarVisibility": "auto",
-  "window.zoomLevel": 0.5,
-  "terminal.external.osxExec": "Warp.app",
+  "window.zoomLevel": 0.75,
   "eslint.format.enable": true,
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "mssql.objectExplorer.groupBySchema": false
 }
