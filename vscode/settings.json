@@ -128,9 +128,8 @@
 
   "redhat.telemetry.enabled": true,
   "window.customTitleBarVisibility": "auto",
-  "window.zoomLevel": 0.75,
+  "window.zoomLevel": 0.5,
   "eslint.format.enable": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "mssql.objectExplorer.groupBySchema": false
+  "liveServer.settings.donotVerifyTags": true
 }
