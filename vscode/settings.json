@@ -36,6 +36,8 @@
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
   },
 
+  "autopep8.args": ["--max-line-length=90"],
+
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"
@@ -131,5 +133,7 @@
   "window.zoomLevel": 0.5,
   "eslint.format.enable": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "liveServer.settings.donotVerifyTags": true
+  "liveServer.settings.donotVerifyTags": true,
+  "editor.accessibilitySupport": "off",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
