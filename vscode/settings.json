@@ -130,7 +130,7 @@
 
   "redhat.telemetry.enabled": true,
   "window.customTitleBarVisibility": "auto",
-  "window.zoomLevel": 0.5,
+  "window.zoomLevel": 0.75,
   "eslint.format.enable": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "liveServer.settings.donotVerifyTags": true,
