@@ -27,9 +27,22 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
-
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[vue]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   "[php]": {
     "editor.tabSize": 4,
@@ -43,14 +56,12 @@
     "editor.defaultFormatter": "ms-python.autopep8"
   },
 
-  "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
-
   "[cpp]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
   "[c]": {
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
   "[rust]": {
@@ -130,10 +141,16 @@
 
   "redhat.telemetry.enabled": true,
   "window.customTitleBarVisibility": "auto",
-  "window.zoomLevel": 0.75,
+  "window.zoomLevel": 0.6,
   "eslint.format.enable": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "liveServer.settings.donotVerifyTags": true,
   "editor.accessibilitySupport": "off",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "explorer.confirmPasteNative": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "window.zoomPerWindow": false
 }
