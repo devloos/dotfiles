@@ -22,15 +22,13 @@ alias gcm="git commit -m"
 alias gti="git"
 alias gom="git pull origin master"
 
-alias ec="cd ~/Developer/C++/Empty-Main"
-alias er="cd ~/Developer/Rust/empty_main/"
-alias lc="cd ~/Developer/Leetcode"
-alias andariego-client="cd ~/Developer/Projects/El-Andariego/client"
-alias andariego-server="cd ~/Developer/Projects/El-Andariego/server"
-alias portfolio-client="cd ~/Developer/Projects/Portfolio/client"
-alias portfolio-server="cd ~/Developer/Projects/Portfolio/server"
-alias ml808="cd ~/Developer/Room-4D/ML808"
-alias psw="cd ~/Documents/Passwords/"
+alias lc="cd ~/development/leetcode"
+
+alias andariego-client="cd ~/development/projects/el-andariego/client"
+alias portfolio-client="cd ~/development/projects/portfolio/client"
+alias portfolio-server="cd ~/development/projects/portfolio/server"
+alias costas-client="cd ~/development/projects/las-costas/client"
+alias costas-server="cd ~/development/projects/las-costas/server"
 
 alias vact="source .venv/bin/activate"
 alias vdeact="source .venv/bin/deactivate"
@@ -54,14 +52,14 @@ function gx() {
 function gxconf() {
   cp ~/Library/Application\ Support/Code/User/settings.json ~/Developer/dotfiles/vscode/settings.json
   cp ~/Library/Application\ Support/Code/User/keybindings.json ~/Developer/dotfiles/vscode/keybindings.json
-  cp ~/.zshrc ~/Developer/dotfiles/personal/terminal/.zshrc
-  cp ~/.gitconfig ~/Developer/dotfiles/personal/git/.gitconfig
-  cp -r ~/.tmux.conf ~/Developer/dotfiles/personal/tmux/.tmux.conf
-  cp -r ~/.config/nvim ~/Developer/dotfiles
+  cp ~/.zshrc ~/development/dotfiles/personal/terminal/.zshrc
+  cp ~/.gitconfig ~/development/dotfiles/personal/git/.gitconfig
+  cp -r ~/.tmux.conf ~/development/dotfiles/personal/tmux/.tmux.conf
+  cp -r ~/.config/nvim ~/development/dotfiles
 
   local p=$(pwd)
 
-  cd ~/Developer/dotfiles/
+  cd ~/development/dotfiles/
   gx .
 
   cd $p
