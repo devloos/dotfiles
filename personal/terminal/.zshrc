@@ -50,8 +50,8 @@ function gx() {
 }
 
 function gxconf() {
-  cp ~/Library/Application\ Support/Code/User/settings.json ~/Developer/dotfiles/vscode/settings.json
-  cp ~/Library/Application\ Support/Code/User/keybindings.json ~/Developer/dotfiles/vscode/keybindings.json
+  cp ~/Library/Application\ Support/Code/User/settings.json ~/development/dotfiles/vscode/settings.json
+  cp ~/Library/Application\ Support/Code/User/keybindings.json ~/development/dotfiles/vscode/keybindings.json
   cp ~/.zshrc ~/development/dotfiles/personal/terminal/.zshrc
   cp ~/.gitconfig ~/development/dotfiles/personal/git/.gitconfig
   cp -r ~/.tmux.conf ~/development/dotfiles/personal/tmux/.tmux.conf
