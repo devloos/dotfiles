@@ -24,11 +24,11 @@ alias gom="git pull origin master"
 
 alias lc="cd ~/development/leetcode"
 
-alias andariego-client="cd ~/development/projects/el-andariego/client"
-alias portfolio-client="cd ~/development/projects/portfolio/client"
-alias portfolio-server="cd ~/development/projects/portfolio/server"
-alias costas-client="cd ~/development/projects/las-costas/client"
-alias costas-server="cd ~/development/projects/las-costas/server"
+alias andariego="cd ~/development/projects/el-andariego"
+alias portfolio="cd ~/development/projects/portfolio"
+alias costas="cd ~/development/projects/las-costas"
+alias devlos-ui="cd ~/development/projects/devlos-ui"
+alias devlos-shop="cd ~/development/projects/devlos-shop"
 
 alias vact="source .venv/bin/activate"
 alias vdeact="source .venv/bin/deactivate"
