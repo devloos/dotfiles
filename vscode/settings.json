@@ -27,6 +27,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
+
   "editor.formatOnSave": true,
 
   "[javascript]": {
@@ -50,7 +51,6 @@
   },
 
   "autopep8.args": ["--max-line-length=90"],
-
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"

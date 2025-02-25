@@ -30,6 +30,14 @@ alias costas="cd ~/development/projects/las-costas"
 alias devlos-ui="cd ~/development/projects/devlos-ui"
 alias devlos-shop="cd ~/development/projects/devlos-shop"
 
+alias ethika="cd ~/development/ethika"
+alias admin-server="cd ~/development/ethika/admin/ethika-admin-api"
+alias admin-client="cd ~/development/ethika/admin/ethika-admin-vue"
+alias site-server="cd ~/development/ethika/site/ethika-site-api"
+alias site-client="cd ~/development/ethika/site/ethika-site-vue"
+alias music-client="cd ~/development/ethika/music/ethika-music-nuxt"
+alias common="cd ~/development/ethika/common/ethika-common"
+
 alias vact="source .venv/bin/activate"
 alias vdeact="source .venv/bin/deactivate"
 
@@ -90,7 +98,7 @@ export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 export OPENSSL_ROOT_DIR="/opt/homebrew/opt/openssl@3"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -106,3 +114,4 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
