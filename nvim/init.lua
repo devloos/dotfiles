@@ -1,4 +1,6 @@
-dofile(vim.fn.stdpath("config") .. "/settings.lua")
+require("config.settings")
+
+local languages = require("config.languages")
 
 -- Bootstrap lazy.nvim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -65,19 +67,19 @@ require("lazy").setup({
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
 		config = function()
+			local formatters_by_ft = {}
+			for lang, config in pairs(languages) do
+				if config.formatter then
+					formatters_by_ft[lang] = { config.formatter }
+				end
+			end
+
 			require("conform").setup({
 				format_on_save = {
 					timeout_ms = 500,
 					lsp_fallback = true,
 				},
-				formatters_by_ft = {
-					lua = { "stylua" },
-					javascript = { "prettier" },
-					typescript = { "prettier" },
-					html = { "prettier" },
-					css = { "prettier" },
-					vue = { "prettier" },
-				},
+				formatters_by_ft = formatters_by_ft,
 			})
 		end,
 	},
@@ -128,16 +130,14 @@ require("lazy").setup({
 			local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-				settings = {
-					Lua = {
-						diagnostics = {
-							globals = { "vim" },
-						},
-					},
-				},
-			})
+			for _, config in pairs(languages) do
+				if config.lsp then
+					lspconfig[config.lsp].setup({
+						capabilities = capabilities,
+						settings = config.settings or {},
+					})
+				end
+			end
 
 			-- Diagnostic virtual text aligned to the right of the line
 			vim.diagnostic.config({
