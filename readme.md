@@ -58,6 +58,12 @@
 
 **[Extensions Config](https://github.com/Puwya/System-Config/blob/master/settings.json)**
 
+### Setup NeoVim
+
+> Pulls config and places it in .config
+
+`git clone https://github.com/devloos/dotfiles.git /tmp/nvim && mv /tmp/nvim/nvim ~/.config/nvim && rm -rf /tmp/nvim`
+
 ### System
 
 #### Terminal
