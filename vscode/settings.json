@@ -28,8 +28,6 @@
     "source.fixAll.eslint": "always"
   },
 
-  "editor.formatOnSave": true,
-
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -47,17 +45,21 @@
 
   "[php]": {
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    "editor.defaultFormatter": "wongjn.php-sniffer"
   },
 
   "autopep8.args": ["--max-line-length=90"],
+
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"
   },
 
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c17",
+
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "ms-vscode.cpptools",
   },
 
   "[c]": {
@@ -152,5 +154,16 @@
   "explorer.confirmPasteNative": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotShowInfoMsg": true,
-  "window.zoomPerWindow": false
+  "window.zoomPerWindow": false,
+  "scm.workingSets.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "chat.agent.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascript": false
+  },
+  "editor.formatOnSave": true,
 }

@@ -30,6 +30,10 @@ alias costas="cd ~/development/projects/las-costas"
 alias devlos-ui="cd ~/development/projects/devlos-ui"
 alias devlos-shop="cd ~/development/projects/devlos-shop"
 
+alias vact="source .venv/bin/activate"
+alias vdeact="source .venv/bin/deactivate"
+
+# Work
 alias ethika="cd ~/development/ethika"
 alias admin-server="cd ~/development/ethika/admin/ethika-admin-api"
 alias admin-client="cd ~/development/ethika/admin/ethika-admin-vue"
@@ -38,8 +42,8 @@ alias site-client="cd ~/development/ethika/site/ethika-site-vue"
 alias music-client="cd ~/development/ethika/music/ethika-music-nuxt"
 alias common="cd ~/development/ethika/common/ethika-common"
 
-alias vact="source .venv/bin/activate"
-alias vdeact="source .venv/bin/deactivate"
+alias des="docker exec -it site-php"
+alias dea="docker exec -it admin-php"
 
 # Composables
 function ta() {
