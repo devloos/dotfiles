@@ -117,5 +117,4 @@ export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"

@@ -12,6 +12,7 @@ vim.opt.smartindent = true
 -- line numbers
 vim.opt.number = true
 vim.opt.numberwidth = 4
+
 vim.opt.relativenumber = true
 
 -- cursor line

@@ -3,6 +3,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   "extensions.ignoreRecommendations": true,
   "files.defaultLanguage": "plaintext",
+  "window.zoomLevel": 0.7,
 
   // Explorer
   "explorer.confirmDragAndDrop": false,
@@ -59,7 +60,7 @@
   "C_Cpp.default.cStandard": "c17",
 
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
   "[c]": {
@@ -143,7 +144,6 @@
 
   "redhat.telemetry.enabled": true,
   "window.customTitleBarVisibility": "auto",
-  "window.zoomLevel": 0.6,
   "eslint.format.enable": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "liveServer.settings.donotVerifyTags": true,
