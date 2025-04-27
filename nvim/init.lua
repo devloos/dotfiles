@@ -1,14 +1,22 @@
-require("config.settings")
-
-local languages = require("config.languages")
-
 -- Bootstrap lazy.nvim plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", lazypath })
 end
 
 vim.opt.rtp:prepend(lazypath)
+
+require("config.settings")
+
+local constants = require("config.constants")
+
+local exclude_args = { "fd", "--type", "f", "--hidden" }
+
+for _, exclude in ipairs(constants.excludes) do
+	table.insert(exclude_args, "--exclude")
+	table.insert(exclude_args, exclude)
+end
 
 require("lazy").setup({
 	-- VS Code-like theme
@@ -61,48 +69,7 @@ require("lazy").setup({
 				pickers = {
 					find_files = {
 						hidden = true,
-						find_command = {
-							"fd",
-							"--type",
-							"f",
-							"--hidden",
-							"--exclude",
-							".git",
-							"--exclude",
-							"node_modules",
-							"--exclude",
-							"build",
-							"--exclude",
-							"dist",
-							"--exclude",
-							"out",
-							"--exclude",
-							"bin",
-							"--exclude",
-							"target",
-							"--exclude",
-							".next",
-							"--exclude",
-							".nuxt",
-							"--exclude",
-							".idea",
-							"--exclude",
-							".vscode",
-							"--exclude",
-							"coverage",
-							"--exclude",
-							".venv",
-							"--exclude",
-							"env",
-							"--exclude",
-							"venv",
-							"--exclude",
-							".parcel-cache",
-							"--exclude",
-							".cache",
-							"--exclude",
-							"__pycache__",
-						},
+						find_command = exclude_args,
 					},
 				},
 			})
@@ -115,10 +82,9 @@ require("lazy").setup({
 		event = { "BufWritePre" },
 		config = function()
 			local formatters_by_ft = {}
-			for lang, config in pairs(languages) do
-				if config.formatter then
-					formatters_by_ft[lang] = { config.formatter }
-				end
+
+			for lang, formatter in pairs(constants.formatters) do
+				formatters_by_ft[lang] = { formatter }
 			end
 
 			require("conform").setup({
@@ -155,7 +121,7 @@ require("lazy").setup({
 				},
 				mapping = cmp.mapping.preset.insert({
 					["<C-;>"] = cmp.mapping.complete(),
-					["<Cr>"] = cmp.mapping.confirm({ select = true }),
+					["<Tab>"] = cmp.mapping.confirm({ select = true }),
 					["<C-j>"] = cmp.mapping.select_next_item(),
 					["<C-k>"] = cmp.mapping.select_prev_item(),
 				}),
@@ -177,14 +143,43 @@ require("lazy").setup({
 			local lspconfig = require("lspconfig")
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-			for _, config in pairs(languages) do
-				if config.lsp then
-					lspconfig[config.lsp].setup({
-						capabilities = capabilities,
-						settings = config.settings or {},
-					})
-				end
+			for _, lsp in ipairs(constants.lsps) do
+				lspconfig[lsp].setup({
+					capabilities = capabilities,
+				})
 			end
+
+			lspconfig.lua_ls.setup({
+				capabilities = capabilities,
+				settings = {
+					Lua = {
+						diagnostics = { globals = { "vim" } },
+					},
+				},
+			})
+
+			lspconfig.ts_ls.setup({
+				capabilities = capabilities,
+				init_options = {
+					plugins = {
+						{
+							name = "@vue/typescript-plugin",
+							location = "/opt/homebrew/lib/node_modules/@vue/typescript-plugin",
+							languages = { "vue" },
+						},
+					},
+				},
+				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+			})
+
+			lspconfig.volar.setup({
+				capabilities = capabilities,
+				init_options = {
+					typescript = {
+						tsdk = "/opt/homebrew/lib/node_modules/typescript/lib",
+					},
+				},
+			})
 
 			-- Diagnostic virtual text aligned to the right of the line
 			vim.diagnostic.config({
