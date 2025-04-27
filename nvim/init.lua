@@ -25,7 +25,7 @@ local function on_attach(_, bufnr)
 		vim.keymap.set(mode, lhs, rhs, opts)
 	end
 
-	-- Go to Definition
+	-- Go to Definition with Ctrl+k and ability to go back with Ctrl+o
 	buf_map("n", "<leader>gt", function()
 		vim.cmd("normal! m`")
 		vim.lsp.buf.definition()
