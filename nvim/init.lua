@@ -18,6 +18,20 @@ for _, exclude in ipairs(constants.excludes) do
 	table.insert(exclude_args, exclude)
 end
 
+local function on_attach(_, bufnr)
+	local buf_map = function(mode, lhs, rhs, opts)
+		opts = opts or { noremap = true, silent = true }
+		opts.buffer = bufnr
+		vim.keymap.set(mode, lhs, rhs, opts)
+	end
+
+	-- Go to Definition
+	buf_map("n", "<leader>gt", function()
+		vim.cmd("normal! m`")
+		vim.lsp.buf.definition()
+	end)
+end
+
 require("lazy").setup({
 	-- VS Code-like theme
 	{
@@ -146,11 +160,13 @@ require("lazy").setup({
 			for _, lsp in ipairs(constants.lsps) do
 				lspconfig[lsp].setup({
 					capabilities = capabilities,
+					on_attach = on_attach,
 				})
 			end
 
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
+				on_attach = on_attach,
 				settings = {
 					Lua = {
 						diagnostics = { globals = { "vim" } },
@@ -160,6 +176,7 @@ require("lazy").setup({
 
 			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
+				on_attach = on_attach,
 				init_options = {
 					plugins = {
 						{
@@ -174,6 +191,7 @@ require("lazy").setup({
 
 			lspconfig.volar.setup({
 				capabilities = capabilities,
+				on_attach = on_attach,
 				init_options = {
 					typescript = {
 						tsdk = "/opt/homebrew/lib/node_modules/typescript/lib",

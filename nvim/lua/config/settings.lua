@@ -42,3 +42,5 @@ vim.keymap.set("n", "}", "}zz") -- cursor stays in middle
 vim.keymap.set("n", "{", "{zz") -- cursor stays in middle
 
 vim.keymap.set("x", "<leader>p", '"_dP')
+
+vim.keymap.set("n", "<C-f>", ":Ex<CR>") -- Open explore page
