@@ -1,22 +1,51 @@
 {
+  // Core Behavior / Security / Git
   "git.openRepositoryInParentFolders": "always",
   "security.workspace.trust.untrustedFiles": "open",
-  "extensions.ignoreRecommendations": true,
-  "files.defaultLanguage": "plaintext",
-  "window.zoomLevel": 0.7,
+  "keyboard.dispatch": "keyCode",
+  "scm.workingSets.enabled": true,
 
-  // Explorer
+  // Window / Workbench / UI
+  "window.zoomLevel": 0.7,
+  "window.zoomPerWindow": false,
+  "window.customTitleBarVisibility": "auto",
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionHighlightBackground": "#0000",
+    "editor.selectionHighlightBorder": "#0000",
+    "editor.wordHighlightStrongBackground": "#0000",
+    "editor.wordHighlightStrongBorder": "#0000",
+    "editor.wordHighlightBackground": "#0000",
+    "editor.wordHighlightBorder": "#0000",
+    "editorBracketMatch.background": "#0000",
+    "editor.background": "#202020"
+  },
+
+  // Explorer / Files
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
   "explorer.compactFolders": false,
+  "files.defaultLanguage": "plaintext",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // Editor (General Settings)
   "editor.fontFamily": "Fira Code, Menlo",
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.guides.indentation": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
   "editor.lineNumbers": "relative",
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.bracketPairColorization.enabled": true,
   "editor.inlayHints.enabled": "off",
   "editor.inlineSuggest.enabled": true,
   "editor.gotoLocation.multipleDefinitions": "goto",
@@ -28,81 +57,62 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "always"
   },
+  "editor.formatOnSave": true,
+  "editor.accessibilitySupport": "off",
 
+  // Language Specific Settings
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[vue]": {
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
   "[php]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "wongjn.php-sniffer"
   },
-
-  "autopep8.args": ["--max-line-length=90"],
-
   "[python]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.autopep8"
   },
-
-  "C_Cpp.default.cppStandard": "c++17",
-  "C_Cpp.default.cStandard": "c17",
-
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
-
   "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "xaver.clang-format"
   },
-
   "[rust]": {
     "editor.tabSize": 4,
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
-
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
 
-  "keyboard.dispatch": "keyCode",
+  // C/C++ Development
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.formatting": "clangFormat",
+  "C_Cpp.clang_format_fallbackStyle": "Google",
 
-  // Workbench
-  "workbench.activityBar.location": "top",
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none",
-  "workbench.colorCustomizations": {
-    "editor.selectionHighlightBackground": "#0000", // similar selection
-    "editor.selectionHighlightBorder": "#0000",
-    "editor.wordHighlightStrongBackground": "#0000", // syntax variable assignment
-    "editor.wordHighlightStrongBorder": "#0000",
-    "editor.wordHighlightBackground": "#0000", // syntax variable
-    "editor.wordHighlightBorder": "#0000",
-    "editorBracketMatch.background": "#0000",
-    "editor.background": "#202020"
-  },
+  // Python Specific
+  "autopep8.args": [
+    "--max-line-length=90"
+  ],
 
-  // Web Development
+  // Web Development (Tailwind, Emmet, etc.)
   "tailwindCSS.colorDecorators": false,
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "emmet.includeLanguages": {
     "twig": "html"
   },
 
-  // vim keybindings
+  // Vim Keybindings
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindings": [
@@ -142,22 +152,16 @@
     }
   ],
 
-  "redhat.telemetry.enabled": true,
-  "window.customTitleBarVisibility": "auto",
+  // Extensions & Integrations
+  "extensions.ignoreRecommendations": true,
   "eslint.format.enable": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "editor.accessibilitySupport": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "C_Cpp.formatting": "clangFormat",
-  "C_Cpp.clang_format_fallbackStyle": "Google",
-  "explorer.confirmPasteNative": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-  "window.zoomPerWindow": false,
-  "scm.workingSets.enabled": true,
+
+  // Copilot & Chat AI
   "github.copilot.nextEditSuggestions.enabled": false,
-  "chat.agent.enabled": true,
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
@@ -165,5 +169,8 @@
     "scminput": false,
     "javascript": false
   },
-  "editor.formatOnSave": true,
+  "chat.agent.enabled": true,
+
+  // Telemetry
+  "redhat.telemetry.enabled": true
 }
