@@ -4,7 +4,6 @@
   "security.workspace.trust.untrustedFiles": "open",
   "keyboard.dispatch": "keyCode",
   "scm.workingSets.enabled": true,
-
   // Window / Workbench / UI
   "window.zoomLevel": 0.7,
   "window.zoomPerWindow": false,
@@ -26,7 +25,6 @@
     "editorBracketMatch.background": "#0000",
     "editor.background": "#202020"
   },
-
   // Explorer / Files
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -36,7 +34,6 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-
   // Editor (General Settings)
   "editor.fontFamily": "Fira Code, Menlo",
   "editor.minimap.enabled": false,
@@ -59,7 +56,9 @@
   },
   "editor.formatOnSave": true,
   "editor.accessibilitySupport": "off",
-
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   // Language Specific Settings
   "[javascript]": {
     "editor.tabSize": 2,
@@ -82,9 +81,11 @@
     "editor.defaultFormatter": "ms-python.autopep8"
   },
   "[cpp]": {
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "[c]": {
+    "editor.tabSize": 4,
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "[rust]": {
@@ -94,24 +95,25 @@
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
   },
-
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // C/C++ Development
   "C_Cpp.default.cppStandard": "c++17",
   "C_Cpp.default.cStandard": "c17",
   "C_Cpp.formatting": "clangFormat",
   "C_Cpp.clang_format_fallbackStyle": "Google",
-
   // Python Specific
-  "autopep8.args": [
-    "--max-line-length=90"
-  ],
-
+  "autopep8.args": ["--max-line-length=90"],
   // Web Development (Tailwind, Emmet, etc.)
+  "tailwindCSS.classAttributes": ["class", "ui"],
   "tailwindCSS.colorDecorators": false,
   "emmet.includeLanguages": {
     "twig": "html"
   },
-
   // Vim Keybindings
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
@@ -151,7 +153,6 @@
       "after": ["\"", "_", "d", "P"]
     }
   ],
-
   // Extensions & Integrations
   "extensions.ignoreRecommendations": true,
   "eslint.format.enable": true,
@@ -159,7 +160,6 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
-
   // Copilot & Chat AI
   "github.copilot.nextEditSuggestions.enabled": false,
   "github.copilot.enable": {
@@ -170,7 +170,9 @@
     "javascript": false
   },
   "chat.agent.enabled": true,
-
   // Telemetry
-  "redhat.telemetry.enabled": true
+  "redhat.telemetry.enabled": true,
+  "material-icon-theme.saturation": 1,
+  "git.enableSmartCommit": true,
+  "debug.onTaskErrors": "showErrors"
 }

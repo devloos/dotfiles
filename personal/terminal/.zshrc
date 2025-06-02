@@ -16,11 +16,17 @@ alias l="ls -la"
 alias ...="cd ../.."
 alias ..="cd .."
 
-alias ga="git add"
-alias gp="git push"
+alias gd='git diff --output-indicator-new=" " --output-indicator-old=" "'
+alias ga='git add'
+alias gc='git commit'
+alias gb='git branch'
+alias gp='git push'
+alias gu='git pull'
+alias gll='git log --graph --all --pretty=format:"%C(magenta)%h %C(white) %an  %ar%C(blue)  %D%n%s%n"'
+alias gm='git merge'
+alias gcl='git clone --recursive'
+alias gi='git init'
 alias gcm="git commit -m"
-alias gti="git"
-alias gom="git pull origin master"
 
 alias lc="cd ~/development/leetcode"
 

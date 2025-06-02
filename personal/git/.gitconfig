@@ -2,22 +2,55 @@
   name = Carlos Aguilera
   email = 18aguilerac@gmail.com
 
-[alias]
-  cam = commit -am
-  cm = commit -m
-  co = checkout
-  psuh = push
-  st = status
-  unstage = restore --staged
+[core]
+  compression = 9
+
+[status]
+  branch = true
+  showStash = true
+
+[diff]
+  context = 3
+  renames = copies
 
 [push]
+  autoSetupRemote = true
   default = current
 
 [pull]
   default = current
+  rebase = true
+
+[rebase]
+  autoStash = true
+
+[log]
+  abbrevCommit = true
+  graphColors = blue,yellow,cyan,magenta,green,red
+
+[alias]
+  unstage = restore --staged
+
+[color "decorate"]
+  HEAD = red
+  branch = blue
+  tag = yellow
+  remoteBranch = magenta
+
+[color "branch"]
+    current  = magenta
+    local    = default
+    remote   = yellow
+    upstream = green
+    plain    = blue
+
 [credential "https://github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
+
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[url "git@github.com:"]
+  insteadOf = "gh:"
