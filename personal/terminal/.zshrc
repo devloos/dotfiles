@@ -68,6 +68,10 @@ function gx() {
   gp
 }
 
+function get() {
+  git checkout origin/${1} -- ${2}
+}
+
 function gxconf() {
   cp ~/Library/Application\ Support/Code/User/settings.json ~/development/dotfiles/vscode/settings.json
   cp ~/Library/Application\ Support/Code/User/keybindings.json ~/development/dotfiles/vscode/keybindings.json
