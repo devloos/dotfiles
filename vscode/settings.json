@@ -121,6 +121,7 @@
   "emmet.includeLanguages": {
     "twig": "html"
   },
+
   // Vim Keybindings
   "vim.leader": "<space>",
   "vim.useSystemClipboard": true,
@@ -168,7 +169,7 @@
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   // Copilot & Chat AI
-  "github.copilot.nextEditSuggestions.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
@@ -177,6 +178,7 @@
     "javascript": false
   },
   "chat.agent.enabled": true,
+
   // Telemetry
   "redhat.telemetry.enabled": true,
   "material-icon-theme.saturation": 1,
