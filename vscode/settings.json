@@ -183,5 +183,7 @@
   "redhat.telemetry.enabled": true,
   "material-icon-theme.saturation": 1,
   "git.enableSmartCommit": true,
-  "debug.onTaskErrors": "showErrors"
+  "debug.onTaskErrors": "showErrors",
+  "git.confirmSync": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden"
 }

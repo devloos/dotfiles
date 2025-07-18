@@ -36,8 +36,9 @@ alias portfolio="cd ~/development/projects/portfolio"
 alias costas="cd ~/development/nexpa/las-costas"
 alias devlos-ui="cd ~/development/projects/devlos-ui"
 alias devlos-shop="cd ~/development/projects/devlos-shop"
+alias devlos-engine="cd ~/development/projects/devlos-engine"
 
-alias tin="cd ~/development/the-inked-network/inked-network-app"
+alias tin="cd ~/development/tin/inked-network-app"
 
 alias vact="source .venv/bin/activate"
 alias vdeact="source .venv/bin/deactivate"
