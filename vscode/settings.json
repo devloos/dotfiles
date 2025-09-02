@@ -124,6 +124,7 @@
 
   // Vim Keybindings
   "vim.leader": "<space>",
+  "vim.surround": true,
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindings": [
     {
@@ -161,6 +162,17 @@
       "after": ["\"", "_", "d", "P"]
     }
   ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Wrap word
+    { "before": ["<leader>", "'"], "after": ["v", "i", "w", "S", "'"] },
+    { "before": ["<leader>", "\""], "after": ["v", "i", "w", "S", "\""] }
+  ],
+
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // Wrap selection
+    { "before": ["<leader>", "'"], "after": ["S", "'"] },
+    { "before": ["<leader>", "\""], "after": ["S", "\""] }
+  ],
   // Extensions & Integrations
   "extensions.ignoreRecommendations": true,
   "eslint.format.enable": true,
@@ -185,5 +197,7 @@
   "git.enableSmartCommit": true,
   "debug.onTaskErrors": "showErrors",
   "git.confirmSync": false,
-  "workbench.secondarySideBar.defaultVisibility": "hidden"
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.productIconTheme": "material-product-icons",
+  "haskell.manageHLS": "GHCup"
 }
