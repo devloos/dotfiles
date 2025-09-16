@@ -5,7 +5,7 @@
   "keyboard.dispatch": "keyCode",
   "scm.workingSets.enabled": true,
   // Window / Workbench / UI
-  "window.zoomLevel": 0.7,
+  "window.zoomLevel": 0.75,
   "window.zoomPerWindow": false,
   "window.customTitleBarVisibility": "auto",
   "workbench.activityBar.location": "top",
@@ -199,5 +199,7 @@
   "git.confirmSync": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.productIconTheme": "material-product-icons",
-  "haskell.manageHLS": "GHCup"
+  "haskell.manageHLS": "GHCup",
+  "jdk.telemetry.enabled": false,
+  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3"
 }
