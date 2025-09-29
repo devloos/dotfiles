@@ -109,3 +109,4 @@
 **GIT**
 
 > Delete all branches except master `git branch | grep -v "master" | xargs git branch -D`
+> Match file to remote `git checkout origin/main -- /path/to/file`
