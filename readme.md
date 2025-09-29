@@ -109,4 +109,5 @@
 **GIT**
 
 > Delete all branches except master `git branch | grep -v "master" | xargs git branch -D`
-> Match file to remote `git checkout origin/main -- /path/to/file`
+> Match file to remote `git checkout origin/main -- /path/to/file` another newer way is git `restore --source=origin/main path/to/your/file.ext`
+
