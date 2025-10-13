@@ -4,6 +4,8 @@ autoload -Uz compinit
 compinit
 
 # Aliases
+alias cat='bat --style=plain --paging=never'
+
 alias srczsh="source ~/.zshrc"
 
 alias zshrc="nvim ~/.zshrc"
@@ -101,7 +103,7 @@ fi
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k" # set by `omz`
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=magenta'
 
 plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-z extract)
