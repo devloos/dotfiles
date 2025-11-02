@@ -8,15 +8,19 @@ alias cat='bat --style=plain --paging=never'
 
 alias srczsh="source ~/.zshrc"
 
+alias vim="nvim"
+
 alias zshrc="nvim ~/.zshrc"
 alias gitrc="nvim ~/.gitconfig"
 alias tmuxrc="nvim ~/.tmux.conf"
 alias nvimrc="nvim ~/.config/nvim"
 alias nginxrc="nvim /opt/homebrew/etc/nginx"
 
-alias l="ls -la"
+alias l="lsd -la"
+alias ls="lsd"
 alias ...="cd ../.."
 alias ..="cd .."
+alias cbc="cb copy"
 
 alias gd='git diff --output-indicator-new=" " --output-indicator-old=" "'
 alias ga='git add'
