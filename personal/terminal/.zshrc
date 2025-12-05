@@ -57,6 +57,8 @@ alias site-server="cd ~/development/ethika/site/ethika-site-api"
 alias site-client="cd ~/development/ethika/site/ethika-site-vue"
 alias music-client="cd ~/development/ethika/music/ethika-music-nuxt"
 alias common="cd ~/development/ethika/common/ethika-common"
+alias pom="cd ~/development/ethika/ethika-promo"
+alias nest="cd ~/development/ethika/ethika-nestjs"
 
 alias des="docker exec -it site-php"
 alias dea="docker exec -it admin-php"
@@ -140,3 +142,8 @@ export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 [ -f "/Users/ca/.ghcup/env" ] && . "/Users/ca/.ghcup/env" # ghcup-env
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/ca/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions

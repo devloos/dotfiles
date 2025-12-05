@@ -9,7 +9,7 @@
   "window.zoomPerWindow": false,
   "window.customTitleBarVisibility": "auto",
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.editorAssociations": {
@@ -191,7 +191,7 @@
   // Copilot & Chat AI
   "github.copilot.nextEditSuggestions.enabled": true,
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
