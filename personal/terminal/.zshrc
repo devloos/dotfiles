@@ -44,7 +44,8 @@ alias devlos-ui="cd ~/development/projects/devlos-ui"
 alias devlos-shop="cd ~/development/projects/devlos-shop"
 alias devlos-engine="cd ~/development/projects/devlos-engine"
 
-alias tin="cd ~/development/tin/inked-network-app"
+alias tin="cd ~/development/tin/the-inked-network-app"
+alias web-tin="cd ~/development/tin/the-inked-network-web"
 
 alias vact="source .venv/bin/activate"
 alias vdeact="source .venv/bin/deactivate"
@@ -146,4 +147,8 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 fpath=(/Users/ca/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
+
 # End of Docker CLI completions
+export NODE_OPTIONS='--use-system-ca'
+export PATH=/opt/homebrew/opt/postgresql@15/bin:/opt/homebrew/opt/postgresql@16/bin:/opt/homebrew/sbin:/Users/ca/.composer/vendor/bin:/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ca/.nvm/versions/node/v24.12.0/bin:/opt/homebrew/opt/postgresql@15/bin:/opt/homebrew/opt/postgresql@16/bin:/opt/homebrew/sbin:/Users/ca/.composer/vendor/bin:/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ca/.nvm/versions/node/v24.12.0/bin:/opt/homebrew/opt/postgresql@15/bin:/opt/homebrew/opt/postgresql@16/bin:/opt/homebrew/sbin:/Users/ca/.composer/vendor/bin:/opt/homebrew/opt/bison/bin:/opt/homebrew/bin:/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/ca/.cargo/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/ca/.nvm/versions/node/v24.12.0/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/X11/bin:/Library/Apple/usr/bin:/usr/local/share/dotnet:~/.dotnet/tools:/usr/local/go/bin:/Applications/Ghostty.app/Contents/MacOS:~/Library/Android/sdk/platform-tools
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
