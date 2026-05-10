@@ -6,7 +6,7 @@ compinit
 # Aliases
 alias cat='bat --style=plain --paging=never'
 
-alias srczsh="source ~/.zshrc"
+alias sz="source ~/.zshrc"
 
 alias vim="nvim"
 
@@ -34,6 +34,9 @@ alias gm='git merge'
 alias gcl='git clone --recursive'
 alias gi='git init'
 alias gcm="git commit -m"
+
+alias ta='tmux attach'
+alias td='tmux detach'
 
 alias lc="cd ~/development/leetcode"
 
