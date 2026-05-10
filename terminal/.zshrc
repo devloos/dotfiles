@@ -88,13 +88,11 @@ function get() {
 }
 
 function gxconf() {
-  cp ~/Library/Application\ Support/Code/User/settings.json ~/development/dotfiles/vscode/settings.json
-  cp ~/Library/Application\ Support/Code/User/keybindings.json ~/development/dotfiles/vscode/keybindings.json
   cp ~/Library/Application\ Support/Cursor/User/settings.json ~/development/dotfiles/cursor/settings.json
   cp ~/Library/Application\ Support/Cursor/User/keybindings.json ~/development/dotfiles/cursor/keybindings.json
-  cp ~/.zshrc ~/development/dotfiles/personal/terminal/.zshrc
-  cp ~/.gitconfig ~/development/dotfiles/personal/git/.gitconfig
-  cp -r ~/.tmux.conf ~/development/dotfiles/personal/tmux/.tmux.conf
+  cp ~/.zshrc ~/development/dotfiles/terminal/.zshrc
+  cp ~/.gitconfig ~/development/dotfiles/git/.gitconfig
+  cp -r ~/.tmux.conf ~/development/dotfiles/tmux/.tmux.conf
   cp -r ~/.config/nvim ~/development/dotfiles
 
   local p=$(pwd)
