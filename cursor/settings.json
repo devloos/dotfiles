@@ -200,5 +200,16 @@
   "jdk.telemetry.enabled": false,
   "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
   "editor.stickyScroll.maxLineCount": 1,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "cursor.cpp.disabledLanguages": [],
+  "git.ignoreRebaseWarning": true,
+  "claudeCode.preferredLocation": "panel",
+  "cursor.composer.usageSummaryDisplay": "always",
+  "bootstrapIntelliSense": {
+    "enable": true,
+    "bsVersion": "5.3.7",
+    "useLocalFile": false,
+    "cssFilePath": "",
+    "languageSupport": []
+  }
 }
