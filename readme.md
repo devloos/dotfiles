@@ -1,113 +1,60 @@
-### System Config
+# dotfiles
+
+Personal macOS development environment — configs, package list, system tweaks, and a one-shot bootstrap.
 
 ![neofetch](assets/neofetch.png)
 
-### Package Manager List
+## What's here
 
-> Not including dependencies
+| Path                 | What it is                                                                      |
+| -------------------- | ------------------------------------------------------------------------------- |
+| `setup.sh`           | Idempotent bootstrap — Homebrew, CLIs, GUI apps, configs, macOS tweaks          |
+| `terminal/`          | `.zshrc` — aliases, env, oh-my-zsh + powerlevel10k                              |
+| `git/`               | `.gitconfig`                                                                    |
+| `tmux/`              | `.tmux.conf` (tpm + tmux-resurrect/continuum)                                   |
+| `nvim/`              | Neovim config (lazy.nvim, mason, telescope, lspconfig)                          |
+| `cursor/`            | Cursor settings/keybindings — synced via Cursor account, reference only         |
+| `raycast/`           | Raycast settings export — import manually inside Raycast                        |
+| `vscode/`            | Legacy VS Code profile blob                                                     |
+| `browser/`           | Dated bookmark exports                                                          |
+| `scripts/cpp-setup/` | Bootstrap a new C++ project in the current directory                            |
+| `scripts/ytdl/`      | `dl-music` — yt-dlp each URL in `urls.txt` as mp3                               |
 
-| **Brew**    | **Brew**               | **Brew**          | **PIP**               |
-| ----------- | ---------------------- | ----------------- | --------------------- |
-| lua         | neovim                 | node@16           | cmake-language-server |
-| wget        | ripgrep                | luarocks          |
-| libtool     | automake               | mongodb-community |
-| symfony-cli | mongodb-database-tools | mongosh           |
-| php         | heroku                 | tree-sitter       |
-| cppcheck    | curl                   | llvm              |
-| mysql       | python@3.10            | cmake             |
+These files are **copies** of the live configs. `setup.sh` pushes repo → system. The `gxconf` shell function in `.zshrc` pulls system → repo.
 
-### Configs
+## First-time setup on a fresh Mac
 
-- [VSCode Settings](https://github.com/Puwya/System-Config/blob/master/settings.json)
-- [Git Config](https://github.com/Puwya/System-Config/blob/master/.gitconfig)
-- [Cpp Setup Script]()
-- [NVIM](https://github.com/Puwya/System-Config/tree/master/.config/nvim)
+1. Install Xcode Command Line Tools:
+   ```sh
+   xcode-select --install
+   ```
+2. Clone this repo:
+   ```sh
+   git clone https://github.com/<you>/dotfiles ~/development/dotfiles
+   ```
+3. Run the bootstrap:
+   ```sh
+   cd ~/development/dotfiles && ./setup.sh
+   ```
+4. Restart your shell.
 
-### System Apps
+The script backs up any existing `~/.zshrc`, `~/.gitconfig`, `~/.tmux.conf`, and `~/.config/nvim` to `~/.dotfiles-backup` on first run.
 
-| Applications |         |                 |
-| ------------ | ------- | --------------- |
-| iTerm        | Outlook | Chrome          |
-| VSCode       | Slack   | Notion          |
-| Spotify      | Discord | MongoDB Compass |
-| Postman      | Zoom    |
+## Manual steps the script can't automate
 
-### Extensions
+- **Raycast** — Preferences → Advanced → Import → `raycast/backup.rayconfig`
+- **tmux plugins** — open tmux, press `prefix + I`
+- **powerlevel10k** — run `p10k configure` for the prompt wizard
 
-- [Activitus Bar](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.activitusbar)
-- [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
-- [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake)
-- [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
-- [cppcheck](https://marketplace.visualstudio.com/items?itemName=QiuMingGe.cpp-check-lint)
-- [Java Debugger](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-debug)
-- [Dev Container](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-- [Doxygen Comments](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Javascript](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
-- [Java](https://marketplace.visualstudio.com/items?itemName=redhat.java)
-- [Material Icon](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
-- [PHP Debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
-- [PHP](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-- [Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
-- [Remote SSH Edit](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh-edit)
-- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
-- [Vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)
-- [VSCode Harpoon](https://marketplace.visualstudio.com/items?itemName=tobias-z.vscode-harpoon)
+## Useful commands
 
-**[Extensions Config](https://github.com/Puwya/System-Config/blob/master/settings.json)**
+**brew**
+- `brew leaves` — installed formulas, no deps
+- `brew outdated` — what needs updating
 
-### Setup NeoVim
+**git**
+- `git branch | grep -v master | xargs git branch -D` — nuke all branches except master
+- `git restore --source=origin/main path/to/file` — reset a file to origin
 
-> Pulls config and places it in .config
-
-`git clone https://github.com/devloos/dotfiles.git /tmp/nvim && mv /tmp/nvim/nvim ~/.config/nvim && rm -rf /tmp/nvim`
-
-### System
-
-#### Terminal
-
-> disables adding period when double spacing
-
-`defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false`
-
-> turns siri off
-
-`defaults write com.apple.Siri StatusMenuVisible -bool false`
-
-> these 3 commands set dock orientation left, enable scale effect, and turn on auto hide
-
-`defaults write com.apple.dock orientation -string left`
-`defaults write com.apple.dock mineffect -string scale`
-`defaults write com.apple.dock autohide -bool true`
-
-> removes recent applications from the dock
-
-`defaults write com.apple.dock show-recents -bool false`
-
-> adds background sounds to control center (note you still need to choose the sounds)
-
-`defaults write com.apple.controlcenter "NSStatusItem Visible Hearing" -bool true`
-
-> binds the escape to cap locks, so pressing cap locks result in esc being pressed
-
-`hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x700000029}]}'`
-
-### Useful Commands
-
-**BREW**
-
-> List brew formulas without dependencies `brew leaves`
-
-> Outdated Formulas `brew outdated`
-
-**CPP**
-
-> Run diagnostics on memory management (similar to valgrind) `leaks --atExit -- ./YOUR_PROGRAM_NAME`
-
-**GIT**
-
-> Delete all branches except master `git branch | grep -v "master" | xargs git branch -D`
-> Match file to remote `git checkout origin/main -- /path/to/file` another newer way is git `restore --source=origin/main path/to/your/file.ext`
-
+**cpp**
+- `leaks --atExit -- ./your-program` — memory leak check (valgrind-ish)
