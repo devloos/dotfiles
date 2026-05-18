@@ -35,6 +35,10 @@ alias gcl='git clone --recursive'
 alias gi='git init'
 alias gcm="git commit -m"
 
+function get() {
+  git checkout origin/${1} -- ${2}
+}
+
 alias ta='tmux attach'
 alias td='tmux detach'
 
@@ -84,10 +88,6 @@ function gx() {
   ga $1
   gcm ${2:-"update"}
   gp
-}
-
-function get() {
-  git checkout origin/${1} -- ${2}
 }
 
 function gxconf() {

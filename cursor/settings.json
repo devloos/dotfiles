@@ -211,5 +211,6 @@
     "useLocalFile": false,
     "cssFilePath": "",
     "languageSupport": []
-  }
+  },
+  "window.autoDetectColorScheme": false
 }

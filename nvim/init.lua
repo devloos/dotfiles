@@ -199,6 +199,16 @@ require("lazy").setup({
 				},
 			})
 
+			lspconfig.eslint.setup({
+				on_attach = function(client, bufnr)
+					-- Optional: Autofix on save
+					vim.api.nvim_create_autocmd("BufWritePre", {
+						buffer = bufnr,
+						command = "EslintFixAll",
+					})
+				end,
+			})
+
 			-- Diagnostic virtual text aligned to the right of the line
 			vim.diagnostic.config({
 				virtual_text = {

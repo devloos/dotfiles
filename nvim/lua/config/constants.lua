@@ -2,7 +2,7 @@ local constants = {}
 
 constants.lsps = {
 	"lua_ls",
-	"eslint_d",
+	"eslint",
 	"html",
 	"cssls",
 	"clangd",
