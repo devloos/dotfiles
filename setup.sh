@@ -112,9 +112,12 @@ mkdir -p "$NVM_DIR"
 # shellcheck disable=SC1091
 . "$(brew --prefix nvm)/nvm.sh"
 
-log "Ensuring latest LTS node"
-nvm install --lts >/dev/null
-nvm alias default 'lts/*' >/dev/null
+# Only install LTS if node isn't currently available
+if ! command -v node &>/dev/null; then
+    nvm install --lts &>/dev/null
+    nvm alias default 'lts/*' &>/dev/null
+fi
+
 ok "node $(node -v)"
 
 #=============================================================
@@ -125,7 +128,9 @@ if ! grep -qx "$ZSH_PATH" /etc/shells; then
   log "Registering $ZSH_PATH in /etc/shells (sudo)"
   echo "$ZSH_PATH" | sudo tee -a /etc/shells >/dev/null
 fi
-if [[ "${SHELL:-}" != "$ZSH_PATH" ]]; then
+
+CURRENT_LOGIN_SHELL="$(dscl . -read "$HOME" UserShell 2>/dev/null | awk '{print $2}')"
+if [[ "$CURRENT_LOGIN_SHELL" != "$ZSH_PATH" ]]; then
   log "Setting zsh as default shell"
   chsh -s "$ZSH_PATH" || warn "chsh failed; run manually: chsh -s $ZSH_PATH"
 else
