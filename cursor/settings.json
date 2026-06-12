@@ -148,12 +148,12 @@
       "after": ["<S-g>", "z", "z"]
     },
     {
-      "before": ["{"],
-      "after": ["{", "z", "z"]
-    },
-    {
       "before": ["}"],
       "after": ["}", "z", "z"]
+    },
+    {
+      "before": ["{"],
+      "after": ["{", "z", "z"]
     },
     {
       "before": ["n"],
@@ -175,7 +175,6 @@
     { "before": ["<leader>", "'"], "after": ["v", "i", "w", "S", "'"] },
     { "before": ["<leader>", "\""], "after": ["v", "i", "w", "S", "\""] }
   ],
-
   "vim.visualModeKeyBindingsNonRecursive": [
     // Wrap selection
     { "before": ["<leader>", "'"], "after": ["S", "'"] },
@@ -212,5 +211,12 @@
     "cssFilePath": "",
     "languageSupport": []
   },
-  "window.autoDetectColorScheme": false
+  "window.autoDetectColorScheme": false,
+  "dart.flutterSdkPath": "/Users/ca/flutter",
+  "dart.devToolsLocation": {
+    "default": "beside",
+    "inspector": "sidebar"
+  },
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false
 }
