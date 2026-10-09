@@ -29,7 +29,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/postgresql@16/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/postgresql@16/lib/pkgconfig"
 export OPENSSL_ROOT_DIR="/opt/homebrew/opt/openssl@3"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-23.jdk/Contents/Home
-export NODE_OPTIONS='--use-system-ca'
 
 # Deduplicated and ordered PATH hierarchy
 typeset -U path # Zsh-native trick: keeps PATH array unique, dropping duplicates automatically
@@ -56,19 +55,13 @@ export PATH
 [ -f "/Users/ca/.ghcup/env" ] && . "/Users/ca/.ghcup/env"
 
 # ==========================================
-# 4. LAZY-LOAD NVM (Speed Multiplier)
+# 4. Load NVM
 # ==========================================
 export NVM_DIR="$HOME/.nvm"
-# Only loads NVM when you actually run 'nvm', 'node', or 'npm'
-nvm() {
-  unset -f nvm node npm npx
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-  nvm "$@"
-}
-node() { nvm > /dev/null; node "$@"; }
-npm() { nvm > /dev/null; npm "$@"; }
-npx() { nvm > /dev/null; npx "$@"; }
+
+# Explicitly load NVM source scripts instantly on terminal startup
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
 
 # ==========================================
 # 5. ALIASES & FUNCTIONS
@@ -130,7 +123,7 @@ alias site-client="cd ~/development/ethika/site/ethika-site-vue"
 alias music-client="cd ~/development/ethika/music/ethika-music-nuxt"
 alias common="cd ~/development/ethika/common/ethika-common"
 alias pom="cd ~/development/ethika/ethika-promo"
-alias nest="cd ~/development/ethika/ethika-nestjs"
+alias e-nest="cd ~/development/ethika/ethika-nestjs"
 alias vact="source .venv/bin/activate"
 alias vdeact="source .venv/bin/deactivate"
 
@@ -161,3 +154,5 @@ function gxconf() {
 
 # Keybindings
 bindkey '…' end-of-line
+export PATH=~/.npm-global/bin:$PATH
+export GITHUB_MCP_PAT="$(gh auth token)"

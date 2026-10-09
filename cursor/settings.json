@@ -25,7 +25,6 @@
     "editorBracketMatch.background": "#0000",
     "editor.background": "#202020"
   },
-  "workbench.colorTheme": "Default Dark Modern",
   // Explorer / Files
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -218,5 +217,11 @@
     "inspector": "sidebar"
   },
   "dart.debugExternalPackageLibraries": false,
-  "dart.debugSdkLibraries": false
+  "dart.debugSdkLibraries": false,
+  "dart.openDevTools": "flutter",
+  "cursor.cpp.enablePartialAccepts": true,
+  "workbench.colorTheme": "Default Dark Modern",
+  "php.validate.executablePath": "/opt/homebrew/bin/php",
+  "cursor.composer.queueMessageDefaultBehavior": "steer"
+  // "js/ts.experimental.useTsgo": true
 }
