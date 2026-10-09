@@ -94,6 +94,7 @@ CASKS=(
   google-chrome
   font-meslo-lg-nerd-font
   claude-code
+  modern-csv
 )
 for c in "${CASKS[@]}"; do
   if brew list --cask "$c" >/dev/null 2>&1; then
