@@ -197,14 +197,112 @@ ok "configs copied"
 #=============================================================
 # 9. macOS system defaults
 #=============================================================
-defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false
-defaults write com.apple.Siri StatusMenuVisible -bool false
+
+# ── Appearance ───────────────────────────────────────────────
+# Dark mode
+defaults write -g AppleInterfaceStyle -string Dark
+# Only show scroll bars while scrolling
+defaults write -g AppleShowScrollBars -string WhenScrolling
+
+# ── Keyboard & typing ────────────────────────────────────────
+# [had] Don't turn a double-space into a period
+defaults write -g NSAutomaticPeriodSubstitutionEnabled -bool false
+# Holding a key repeats it instead of showing the accent popup
+defaults write -g ApplePressAndHoldEnabled -bool false
+# Fastest key repeat (default is 6; lower = faster)
+defaults write -g KeyRepeat -int 2
+# Turn off continuous spell checking (red underlines)
+defaults write -g NSAllowContinuousSpellChecking -bool false
+
+# ── Trackpad & mouse ─────────────────────────────────────────
+# [had] Disable two-finger swipe for back/forward
+defaults write -g AppleEnableSwipeNavigateWithScrolls -bool false
+# Don't enlarge the pointer when you shake it
+defaults write -g CGDisableCursorLocationMagnification -bool true
+# Tracking speeds
+defaults write -g com.apple.trackpad.scaling -float 0.6875
+defaults write -g com.apple.mouse.scaling -float 0.875
+defaults write -g com.apple.scrollwheel.scaling -float 0.75
+
+# ── Dock ─────────────────────────────────────────────────────
+# [had] Dock on the right
 defaults write com.apple.dock orientation -string right
+# [had] Scale effect for minimizing
 defaults write com.apple.dock mineffect -string scale
+# [had] Auto-hide the Dock
 defaults write com.apple.dock autohide -bool true
+# [had] Don't show recent apps
 defaults write com.apple.dock show-recents -bool false
+# Small icons (default 48)
+defaults write com.apple.dock tilesize -int 33
+# Magnify icons on hover, up to 82
+defaults write com.apple.dock magnification -bool true
+defaults write com.apple.dock largesize -int 82
+# Don't bounce apps when they open
+defaults write com.apple.dock launchanim -bool false
+# Minimize windows into their app icon
+defaults write com.apple.dock minimize-to-application -bool true
+# Bottom-right hot corner: none (default opens Quick Note)
+defaults write com.apple.dock wvous-br-corner -int 1
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# ── Mission Control / Spaces / windows ───────────────────────
+# Don't rearrange Spaces based on recent use
+defaults write com.apple.dock mru-spaces -bool false
+# Don't jump to a Space with open windows when switching apps
+defaults write com.apple.dock workspaces-auto-swoosh -bool false
+# Turn off the Space-switching slide animation (hidden setting)
+defaults write com.apple.dock workspaces-swoosh-animation-off -bool true
+# No gaps between tiled windows
+defaults write com.apple.WindowManager EnableTiledWindowMargins -bool false
+
+# ── Finder ───────────────────────────────────────────────────
+# Show all file extensions
+defaults write -g AppleShowAllExtensions -bool true
+# Column view by default
+defaults write com.apple.finder FXPreferredViewStyle -string clmv
+# Search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string SCcf
+# Folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+# Show path bar and status bar
+defaults write com.apple.finder ShowPathbar -bool true
+defaults write com.apple.finder ShowStatusBar -bool true
+# New Finder windows open your Home folder
+defaults write com.apple.finder NewWindowTarget -string PfHm
+# Don't show external drives on the Desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+# Empty Trash items after 30 days
+defaults write com.apple.finder FXRemoveOldTrashItems -bool true
+
+# ── Menu bar & Control Center ────────────────────────────────
+# [had] Hide Siri in the menu bar
+defaults write com.apple.Siri StatusMenuVisible -bool false
+# [had] Show the Hearing icon in the menu bar
 defaults write com.apple.controlcenter "NSStatusItem Visible Hearing" -bool true
-killall Dock 2>/dev/null || true
+# Show battery percentage
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+# Turn off AirPlay Receiver
+defaults -currentHost write com.apple.controlcenter AirplayReceiverEnabled -bool false
+
+# ── Screenshots ──────────────────────────────────────────────
+# Save screenshots to Downloads
+defaults write com.apple.screencapture location -string "$HOME/Downloads"
+# Save as JPG instead of PNG
+defaults write com.apple.screencapture type -string jpg
+# Show mouse clicks in screen recordings
+defaults write com.apple.screencapture showsClicks -bool true
+
+# ── Power (needs sudo) ───────────────────────────────────────
+# Display sleeps after 20 min on battery and power adapter
+sudo pmset -a displaysleep 20
+# Never sleep automatically (the display still sleeps)
+sudo pmset -a sleep 0
+# Don't dim the display slightly on battery
+sudo pmset -b lessbright 0
+
+# ── Apply ────────────────────────────────────────────────────
+killall Dock Finder SystemUIServer ControlCenter 2>/dev/null
 
 # Caps Lock -> Escape
 hidutil property --set \
